@@ -1,0 +1,244 @@
+.plan 06 March 2002
+Coding on engine to continue today after a laspe of a month or so whilst awaiting all neccessary hardware to arrive. 2 machines up 
+running smoothly now, PS2KVM switch box intact. Each machine now has a dedicated purppose. Coding/debugging done on lowend machine,
+surfuring testing on the other. Hopefully I will be able to fix the BSP compiler fairly quickly and commense hacking out some new 
+feature in the engine.
+
+15 march
+I cant belive how simple an error held back dev on this engine; as a mere misplaced/mistaken variable name. But , thankfully, I belive 
+that everything is fixed now with the compiler. Now I just have to try out everything and make sure that everything works.
+
+17 may
+BSP compiler finished. Commented out buggy poly-splitting code in favor of working poly-sharing code... Even on fast computer, the recursion ( perhaps unnessary ) slows down the execution... Next, to clean up the bsp rendering code, and begin on the next order of buisness.
+
+21 may
+md2 loader finished (*very* simple file spec ). Will add code for frame interpolation/custom rendering routines after camera code becomes functional.
+  2037 Finished camera code ( I'm on a roll ). Comtemplating what to do next. Debating on adding bitmap/2d support and or adding quick DInput support; Light/shadow map
+       code also a possibility. Realisticly, I could very well begin coding a game as soon as I get a decent level editor up and running ( which will no doubt prove to 
+	   be a task most daunting ). Will do research, and start writing more fresh code TMW.
+
+24 may
+Engine coming along very nicely. Move code over to new project as a libary being used by the level editor currently dubbed 
+"K3DLevelED". Working on adding DirectInput support beforing continuing work on the GUI definitions for level editor.
+28 may
+took a the weekend off from coding. Finished support for DirectInput. Next order of buisness, incorporting bitmap/scaleable fonts. I think that should be
+all that is required before begining dev on the level editor. The only unfortunate things is that I ( and my computers ) are soon to be leaving, so I may have 
+to take about a month away from any futer dev....
+
+30 Sep.
+long time sience I have added any substantially new code the the renderer core. Have decided to add support for mest/texture generation. 
+
+
+20 Nov
+Back coding again... Have a new system up with both VC++ IDE / 3DS Max 5... Let the mayhem comense.        
+
+21 Nov
+Having problems getting texture to map onto preloaded meshes.. Keeping this here for safe keeping:
+
+/*	PolySet_t ps;
+	bspNode_t bsp;
+	bsp.plChild=bsp.prChild=NULL;*/
+
+	Model_t scene;
+	
+  //  ENT_M_InitStandAlone(&scene);
+//	IG_3DS_LoadObject( &scene , "3dm-q2shotgun2.3ds" );
+	ref = R_Tx_LoadTexture( "pic03.bmp" );
+	
+//	MTP_Strip( &scene , &ps );
+//	bsp.Polys = ps;
+	
+	//R_BSP_ConstructTree( &bsp );
+
+//	scene.Renderer = ENT_M_WireFrameRenderer;
+//	scene.Renderer = ENT_M_SkTextureRenderer;
+
+	WndStruct w;w.xDimension=1280,w.yDimension=200;
+	w.hInstance = hInstance;
+
+    k_boolean complete=k_false;
+	MSG msg;
+
+	OpenGL_Struct ogl;
+	ogl.contextDepth = 16;
+	ogl.contextPitch = 640;
+	ogl.fullScreen = k_false;
+	ogl.yResolution =   480;
+
+	SYS_OGL_CreateContext( &ogl , &w );
+
+	glEnable( GL_TEXTURE_2D );
+
+	while( complete==k_false )
+	{
+		if( PeekMessage( &msg , w.hWnd , 0 ,0 , PM_REMOVE ) )
+		{
+			if( msg.message == WM_QUIT )
+			{
+				PostQuitMessage( 0 );
+				complete = k_true;
+			}
+			
+			else
+			{
+				TranslateMessage( &msg );
+				DispatchMessage( &msg );
+			}
+		}
+
+		else
+        /* application code */
+		{
+////////// Input code ///////////////////////////////////////////////////////////////////////
+
+////////// Logic code ///////////////////////////////////////////////////////////////////////
+			
+////////// Sound code ///////////////////////////////////////////////////////////////////////	   	
+
+////////// Graphics code ////////////////////////////////////////////////////////////////////
+		/*	SYS_OGL_PrepFrame();
+		//	glTranslatef( 0.0f , 0.0f  ,-500.0f + (float)-500*sin(i/100) );
+			glTranslated( 0 , -20 , -50 );
+			glRotated( i++ , 0 ,-1, 0  );
+		
+	//		scene.Renderer( &scene );
+
+			glTranslatef( 0 , 0 , -40 );
+			glRotatef( i++ , 0 , 0 , 1 );
+			R_Tx_UseTexture(ref);
+
+			glBegin( GL_QUADS );
+			   glTexCoord3d( 0 , 0 , 0 );
+			   glVertex2d( -1, 1 );
+
+			   glTexCoord3d( 1 , 0 , 0 );
+			   glVertex2d( 1, 1 );
+
+			   glTexCoord3d( 1 , 1 , 0 );
+			   glVertex2d( 1, -1 );
+
+			   glTexCoord3d( 0 , 1 , 0 );
+			   glVertex2d( -1, -  1 );
+             glEnd();
+
+		   SwapBuffers( ogl.hDeviceContext );*/
+
+				SYS_OGL_PrepFrame();
+			glLoadIdentity();
+
+			glViewport( 0 , 0 , 150 , 150 );
+ 
+			glTranslatef( 0 , 0 , -10 );
+			glRotatef( i++ , 0 , 0 , 1 );
+			R_Tx_UseTexture(ref);
+
+			glBegin( GL_QUADS );
+			   glTexCoord3d( 0 , 0 , 0 );
+			   glVertex2d( -1, 1 );
+
+			   glTexCoord3d( 1 , 0 , 0 );
+			   glVertex2d( 1, 1 );
+
+			   glTexCoord3d( 1 , 1 , 0 );
+			   glVertex2d( 1, -1 );
+
+			   glTexCoord3d( 0 , 1 , 0 );
+			   glVertex2d( -1, -  1 );
+             glEnd();
+
+				
+			SwapBuffers( ogl.hDeviceContext );
+		}
+	}
+
+	SYS_OGL_KillContext( &ogl , &w );
+
+	return msg.wParam;
+
+}
+
+24 nov
+Problem fixed. I guess it was just from being away from coding for so long and forgetting how my engine works... 
+Can load fully textured objects now. Next order of buisness, loading animatons... 
+
+31 nov
+Reading up on the old 3ds dox to try and figure out how to load in the keyframe data... After this I think that 
+it is about time to wrap up the engine and get starting working on the game that has been far to long in coming. 
+On with the research.. 
+
+04 dec 
+work coming along smoothly ( albeit slowly... ). Finish loading in the global keyframe stuff, and am working on getting 
+the track/object specific stuff out next.. It seems that there is a whole crap load of stuff in these files... I guess this 
+is the unoffical year anniversary of this project ( so sad ) because some of the source files are dated this month last year....
+
+
+26 dec
+Havent have the motivation to code lately. But am back at work for the time being... Hacking out the keyframe 
+loader stuff.. 
+
+09 jan
+Figured out a pretty big part of the file spec.. Workin on  yankin the stuph ota dere... lol.
+20 jan 
+back in the swing of things... Everything coming out nicely... Letting the code flow through ... 
+
+15 jan
+Got rid of the *one* character that had be stumped for a couple of days... Now the position tracks keyframe stuff is loaded in
+Next I have to do the scaling and rotation ones, and the worse should be over... Thats is except for the child objects, which I really 
+hope isnt that big of a deal because I feel some true progress on the horizon.
+
+18 jan
+I think that I may be pretty much finished with the whole keyframe business.. Those silly billies that wrote the file spec neglected to 
+mention that the angle were in radians!!!... Time to do some test cases...
+
+19 jan
+Durn it.. There is something unexplained in the file spec that has me stumped.. everything is loading the way the spec describes, 
+but the extracted keyframes are incomplete/inaccurate.. I am now sure how to work around this... 
+
+01 feb 
+Hmmm. Found a lead on the  keyframe stuff... As it turns out ( or so I've been lead to believe ), the rotations are stored as relative 
+rotations ( not global ), and are in order to get absolute rotations, you have to convert the rotations to quaternions, and the 
+desired translation is the product of 2 successive quats... I could easily just rip code to accomplish this, but I've decided to do some 
+reasearch on quaternion algebra as well as some complex maths.... Code to resume in a bit.. 
+
+08 feb
+Going to start implementing the quaternion stuff today... 
+----
+Downloading the CG toolkit now... Prehaps will do some more foward thinking things, and try writing some simple shaders. 
+----
+Finished all the mandatory quaternion routines... Will debug them and try getting the rotations finished tmw. 
+
+10 mar 03 
+Hmm... Found some pretty interesting stuff today to do some cool reasearch on: algebraic surfaces... They are just what I have been 
+waiting for. So, once I go on leave, I will start writing some *new* stuff, as well as (trying to)finish up the buggy quaternion routines. 
+
+26 mar 03 
+have written any more than 10 lines of code. perhaps this is a good thing. Got a new book.... Just taking a much needed departure from everything.
+
+27 mar 03 
+been hard at work on debugging the keyframe stuff. Have come to the conclusion, that my code is on the right track, it's just something screwy going 
+on with the file format, that i am not sure how to account for yet. The angles ( for a consistent. angle increasing ,.rotation ) show up in the file
+as defined by some trigonometic function. I am not sure if this is on account of data format ( degrees/radians ), or some kind of funky way the realative 
+quaternions are used to encode transforms... Either way, I am away from my resoures, am will try moving on with the algebraic surfaces in the mean time. 
+------
+created the first files for surface generation. 
+
+****************************************************************************************************************
+
+21 oct 03
+wow. no signifigant coding done for over 8 months... This is a trend that must stop now... Ok, back to those troublesome 
+rotation tracks... 
+
+21 nov.
+Wow. Finally fixed the rotation stuff. As it turns out, I was mislead into thinking that quaternions were *required* for the 
+rotations. After some serious hex work, and new online refs, I can finally move on and begin to make some real progress. 
+
+25 nov
+what exactly was I thining when I first wrote this code?!?!?! This is horrible... In order to move forward, the entire 
+approach needs to be redone.... 
+
+// 11 March 05 
+Wow.. Almost out of the military now... And very little code has been written... 
+
+// 03 May 05
+Major lifestyle change has made it much easier to do productive things now... Such as coding :)
+

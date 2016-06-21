@@ -1,0 +1,1509 @@
+ KaosDemoEngine
+
+ Timestamp is 431c51b5 (Mon Sep 05 23:09:57 2005)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0001c418H .text                   CODE
+ 0002:00000000 00001b4cH .rdata                  DATA
+ 0002:00001b4c 00000000H .edata                  DATA
+ 0003:00000000 00000004H .CRT$XCA                DATA
+ 0003:00000004 00000004H .CRT$XCZ                DATA
+ 0003:00000008 00000004H .CRT$XIA                DATA
+ 0003:0000000c 00000008H .CRT$XIC                DATA
+ 0003:00000014 00000004H .CRT$XIZ                DATA
+ 0003:00000018 00000004H .CRT$XPA                DATA
+ 0003:0000001c 00000004H .CRT$XPX                DATA
+ 0003:00000020 00000004H .CRT$XPZ                DATA
+ 0003:00000024 00000004H .CRT$XTA                DATA
+ 0003:00000028 00000004H .CRT$XTZ                DATA
+ 0003:00000030 00001c7cH .data                   DATA
+ 0003:00001cb0 000030a0H .bss                    DATA
+ 0004:00000000 0000008cH .idata$2                DATA
+ 0004:0000008c 00000014H .idata$3                DATA
+ 0004:000000a0 0000029cH .idata$4                DATA
+ 0004:0000033c 0000029cH .idata$5                DATA
+ 0004:000005d8 00000aa2H .idata$6                DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000000       ?AS_Sphere@@YAXPAUModel_t@@HH@Z 00401000 f   alg_surf.obj
+ 0001:00000070       ?Import3DSObject@@YAHPAUModel_t@@PAD@Z 00401070 f   import_3ds.obj
+ 0001:00000130       ?IG_3DS_LoadObject@@YAXPAUModel_t@@PAD@Z 00401130 f   Import_Geo.obj
+ 0001:000007a0       ?MD2_LoadObject@@YA?AW4k_boolean@@PAUmd2Struct_t@@PADPAUModel_t@@@Z 004017a0 f   md2Loader.obj
+ 0001:000012b0       ?Txt_wglBuildFont@@YAPAUHFONT__@@PADHHHPAUHDC__@@@Z 004022b0 f   text.obj
+ 0001:000013b0       ?Txt_wglPrint@@YAHPADMMM@Z 004023b0 f   text.obj
+ 0001:00001520       ?UTL_SwitchEndian_ReadByteFromFile@@YAEPAU_iobuf@@J@Z 00402520 f   util_end.obj
+ 0001:00001580       ?UTL_SwitchEndian_ReadWordFromFile@@YAGPAU_iobuf@@J@Z 00402580 f   util_end.obj
+ 0001:00001610       ?UTL_SwitchEndian_ReadWordFromFile@@YAGPAU_iobuf@@@Z 00402610 f   util_end.obj
+ 0001:00001690       ?UTL_SwitchEndian_ReadDWordFromFile@@YAIPAU_iobuf@@J@Z 00402690 f   util_end.obj
+ 0001:00001720       ?UTL_SwitchEndian_ReadDWordFromFile@@YAIPAU_iobuf@@@Z 00402720 f   util_end.obj
+ 0001:00001780       ?UTL_ReverseEndian@@YAEE@Z 00402780 f i util_end.obj
+ 0001:000018c0       ?UTL_ReverseEndian@@YAGG@Z 004028c0 f i util_end.obj
+ 0001:00001a00       ?UTL_ReverseEndian@@YAII@Z 00402a00 f i util_end.obj
+ 0001:00001b20       ?MTM_LoadIdentity@@YAXQAY03M@Z 00402b20 f   Matrix.obj
+ 0001:00001b80       ?MTM_Normalize@@YAXQAY03M@Z 00402b80 f   Matrix.obj
+ 0001:00001d00       ?MTM_Scale@@YAXQAY03MM@Z   00402d00 f   Matrix.obj
+ 0001:00001d80       ?MTM_ScalDiag@@YAXQAY03MM@Z 00402d80 f   Matrix.obj
+ 0001:00001de0       ?MTM_SetTranslation@@YAXQAY03MMMM@Z 00402de0 f   Matrix.obj
+ 0001:00001e20       ?MTM_SetTranslation@@YAXQAY03MUVect3_t@@@Z 00402e20 f   Matrix.obj
+ 0001:00001e60       ?MTM_SetRotation@@YAXQAY03MMMMM@Z 00402e60 f   Matrix.obj
+ 0001:00001ec0       ?MTM_SetRotation@@YAXQAY03MMUVect3_t@@@Z 00402ec0 f   Matrix.obj
+ 0001:00001f20       ?MTM_Multiply@@YAXQAY03M00@Z 00402f20 f   Matrix.obj
+ 0001:00001fe0       ?MTM_Multiply@@YA?AUVect3_t@@QAY03MAAU1@@Z 00402fe0 f   Matrix.obj
+ 0001:00002100       ?MTM_Switch_oglFormat@@YAXQAY03M@Z 00403100 f   Matrix.obj
+ 0001:00002180       ?MTPl_Build@@YAXPAUPoly_t@@PAUPlane_t@@@Z 00403180 f   plane.obj
+ 0001:000022b0       ?MTPl_Paramatize@@YA?AUVect3_t@@PAUPlane_t@@@Z 004032b0 f   plane.obj
+ 0001:00002310       ?MTPl_Evaluate@@YAMPAUPlane_t@@PAUVect3_t@@@Z 00403310 f   plane.obj
+ 0001:00002360       ?MTPl_Classify@@YA?AW4Polygon_PlaneRel@@PAUPlane_t@@PAUPoly_t@@@Z 00403360 f   plane.obj
+ 0001:000026b0       ?MTPl_Intersect@@YA?AUVect3_t@@PAUPlane_t@@PAUPoly_t@@PAU1@2@Z 004036b0 f   plane.obj
+ 0001:00002810       ?MTP_AllocTri@@YAXPAUPoly_t@@@Z 00403810 f   Polygon.obj
+ 0001:00002870       ?MTP_AllocQuad@@YAXPAUPoly_t@@@Z 00403870 f   Polygon.obj
+ 0001:000028d0       ?MTP_MakeNormal@@YA?AUVect3_t@@PAUPoly_t@@@Z 004038d0 f   Polygon.obj
+ 0001:000029c0       ?MTP_IsVisible@@YA?AW4k_boolean@@PAUPoly_t@@AAUVect3_t@@@Z 004039c0 f   Polygon.obj
+ 0001:00002a20       ?MTP_AddPolygon@@YAPAUPoly_t@@PAUPolySet_t@@PAU1@@Z 00403a20 f   Polygon.obj
+ 0001:00002a50       ?MTQ_Init@@YAXPAUQuaternion_t@@MMMM@Z 00403a50 f   quaternion.obj
+ 0001:00002aa0       ?MTQ_Init@@YAXPAUQuaternion_t@@MUVect3_t@@@Z 00403aa0 f   quaternion.obj
+ 0001:00002af0       ?MTQ_Convert@@YA?AUVect3_t@@PAUQuaternion_t@@@Z 00403af0 f   quaternion.obj
+ 0001:00002b50       ?MTQ_Conjugate@@YA?AUQuaternion_t@@PAU1@@Z 00403b50 f   quaternion.obj
+ 0001:00002bd0       ?MTQ_Add@@YA?AUQuaternion_t@@PAU1@0@Z 00403bd0 f   quaternion.obj
+ 0001:00002c60       ?MTQ_Multiply@@YA?AUQuaternion_t@@PAU1@0@Z 00403c60 f   quaternion.obj
+ 0001:00002da0       ?MTQ_Lenght@@YAMPAUQuaternion_t@@@Z 00403da0 f   quaternion.obj
+ 0001:00002e60       ?MTQ_Clear@@YAXPAUQuaternion_t@@@Z 00403e60 f   quaternion.obj
+ 0001:00002eb0       ?MTQ_Negate@@YAXPAUQuaternion_t@@@Z 00403eb0 f   quaternion.obj
+ 0001:00002f10       ?MTQ_Normalize@@YAXPAUQuaternion_t@@@Z 00403f10 f   quaternion.obj
+ 0001:00002f90       ?MTV_Clear@@YAXAAUVect3_t@@@Z 00403f90 f   Vector.obj
+ 0001:00002fe0       ?MTV_Negate@@YAXAAUVect3_t@@@Z 00403fe0 f   Vector.obj
+ 0001:00003030       ?MTV_Init@@YAXAAUVect3_t@@MMM@Z 00404030 f   Vector.obj
+ 0001:00003090       ?MTV_Lenght@@YAMAAUVect3_t@@@Z 00404090 f   Vector.obj
+ 0001:00003120       ?MTV_Normalize@@YAXAAUVect3_t@@@Z 00404120 f   Vector.obj
+ 0001:00003190       ?MTV_DotProd@@YAMAAUVect3_t@@0@Z 00404190 f   Vector.obj
+ 0001:000031e0       ?MTV_CrossProd@@YA?AUVect3_t@@AAU1@0@Z 004041e0 f   Vector.obj
+ 0001:00003280       ?MTV_Add@@YA?AUVect3_t@@AAU1@00@Z 00404280 f   Vector.obj
+ 0001:00003300       ?MTV_Equality@@YA?AW4k_boolean@@UVect3_t@@0@Z 00404300 f   Vector.obj
+ 0001:00003350       ?MTV_Scale@@YA?AUVect3_t@@AAU1@M@Z 00404350 f   Vector.obj
+ 0001:000033c0       ?ENT_C_LookAt@@YAXPAUCamera_t@@@Z 004043c0 f   camera.obj
+ 0001:000034a0       ?ENT_C_Move@@YAXPAUCamera_t@@@Z 004044a0 f   camera.obj
+ 0001:00003510       ?ENT_M_LambertRenderer@@YAXPAUModel_t@@@Z 00404510 f   model.obj
+ 0001:00003760       ?ENT_M_GouraudRenderer@@YAXPAUModel_t@@@Z 00404760 f   model.obj
+ 0001:00003780       ?ENT_M_WireFrameRenderer@@YAXPAUModel_t@@@Z 00404780 f   model.obj
+ 0001:00003af0       ?ENT_M_PWTextureRenderer@@YAXPAUModel_t@@@Z 00404af0 f   model.obj
+ 0001:00003b10       ?ENT_M_SkTextureRenderer@@YAXPAUModel_t@@@Z 00404b10 f   model.obj
+ 0001:00003df0       ?ENT_M_AddChild@@YAPAUModel_t@@PAU1@@Z 00404df0 f   model.obj
+ 0001:00003e80       ?ENT_M_InitStandAlone@@YAXPAUModel_t@@@Z 00404e80 f   model.obj
+ 0001:00003ef0       ?ENT_M_InitHierarchy@@YAXPAUModel_t@@@Z 00404ef0 f   model.obj
+ 0001:00003f60       ?MTP_Strip@@YAXPAUModel_t@@PAUPolySet_t@@@Z 00404f60 f   model.obj
+ 0001:00004060       ?DX_InitInterfaces@@YAXXZ  00405060 f   DXWrapper.obj
+ 0001:00004300       ?DX_GetDeviceStates@@YAXXZ 00405300 f   DXWrapper.obj
+ 0001:00004390       ?SYS_OGL_KillContext@@YAXPAUOpenGL_Struct@@PAUWndStruct@@@Z 00405390 f   OpenGL.obj
+ 0001:00004440       ?SYS_OGL_CreateContext@@YAXPAUOpenGL_Struct@@PAUWndStruct@@@Z 00405440 f   OpenGL.obj
+ 0001:000048d0       ?SYS_OGL_ResizeContext@@YAXGG@Z 004058d0 f   OpenGL.obj
+ 0001:000049c0       ?SYS_OGL_SetStates@@YAXXZ  004059c0 f   OpenGL.obj
+ 0001:00004ab0       ?SYS_OGL_PrepFrame@@YAXXZ  00405ab0 f   OpenGL.obj
+ 0001:00004b00       ?SYS_W32_WndProc@@YGJPAUHWND__@@IIJ@Z 00405b00 f   Win32.obj
+ 0001:00004c40       ?SYS_W32_RegisterClass@@YAXPAUWndStruct@@@Z 00405c40 f   Win32.obj
+ 0001:00004d20       ?SYS_W32_CreateWindow@@YAXPAUWndStruct@@@Z 00405d20 f   Win32.obj
+ 0001:00004df0       ?R_BSP_ConstructTree@@YAXPAUbspNode_t@@PAUPolySet_t@@@Z 00405df0 f   bsp_comp.obj
+ 0001:00004e10       ?R_BSP_ConstructTree@@YAXPAUbspNode_t@@@Z 00405e10 f   bsp_comp.obj
+ 0001:000054e0       ?R_BSP_DeleteTree@@YAXPAUbspNode_t@@@Z 004064e0 f   bsp_comp.obj
+ 0001:00005500       ?R_BSP_RenderNode@@YAXPAUbspNode_t@@PAUCamera_t@@@Z 00406500 f   bsp_ren.obj
+ 0001:000059e0       ?R_BSP_RecurseRootNode@@YAXPAUbspNode_t@@PAUCamera_t@@@Z 004069e0 f   bsp_ren.obj
+ 0001:00005d60       ?R_L_Init@@YAXIPAULightStruct@@@Z 00406d60 f   light.obj
+ 0001:00005e50       ?R_Tx_LoadTexture@@YAGPAD@Z 00406e50 f   texture.obj
+ 0001:00005fc0       ?R_Tx_UseTexture@@YAXG@Z   00406fc0 f   texture.obj
+ 0001:00006010       ?R_Tx_BuildTexture@@YAGGGEPAX@Z 00407010 f   texture.obj
+ 0001:000060b0       ?R_Z_RenderWorld@@YAXPAUCamera_t@@PAUModel_t@@@Z 004070b0 f   z_buffer.obj
+ 0001:00006140       ?BTMP_PCX_LoadBitmap@@YAGPADPAUpcxStruct_t@@@Z 00407140 f   pcx.obj
+ 0001:00006530       _WinMain@16                00407530 f   EndianDemo.obj
+ 0001:00006552       _PostQuitMessage@4         00407552 f   user32:USER32.dll
+ 0001:00006558       _MessageBoxA@16            00407558 f   user32:USER32.dll
+ 0001:0000655e       _ReleaseDC@8               0040755e f   user32:USER32.dll
+ 0001:00006564       _ShowCursor@4              00407564 f   user32:USER32.dll
+ 0001:0000656a       _ChangeDisplaySettingsA@8  0040756a f   user32:USER32.dll
+ 0001:00006570       _GetDC@4                   00407570 f   user32:USER32.dll
+ 0001:00006576       _AdjustWindowRectEx@16     00407576 f   user32:USER32.dll
+ 0001:0000657c       _DefWindowProcA@16         0040757c f   user32:USER32.dll
+ 0001:00006582       _EndPaint@8                00407582 f   user32:USER32.dll
+ 0001:00006588       _BeginPaint@8              00407588 f   user32:USER32.dll
+ 0001:0000658e       _RegisterClassA@4          0040758e f   user32:USER32.dll
+ 0001:00006594       _LoadIconA@8               00407594 f   user32:USER32.dll
+ 0001:0000659a       _LoadCursorA@8             0040759a f   user32:USER32.dll
+ 0001:000065a0       _SetFocus@4                004075a0 f   user32:USER32.dll
+ 0001:000065a6       _SetForegroundWindow@4     004075a6 f   user32:USER32.dll
+ 0001:000065ac       _ShowWindow@8              004075ac f   user32:USER32.dll
+ 0001:000065b2       _CreateWindowExA@48        004075b2 f   user32:USER32.dll
+ 0001:000065b8       _SelectObject@8            004075b8 f   gdi32:GDI32.dll
+ 0001:000065be       _CreateFontA@56            004075be f   gdi32:GDI32.dll
+ 0001:000065c4       _SetPixelFormat@12         004075c4 f   gdi32:GDI32.dll
+ 0001:000065ca       _ChoosePixelFormat@8       004075ca f   gdi32:GDI32.dll
+ 0001:000065d0       _GetStockObject@4          004075d0 f   gdi32:GDI32.dll
+ 0001:000065d6       _wglUseFontOutlinesA@32    004075d6 f   OpenGL32:OPENGL32.dll
+ 0001:000065dc       _glGenLists@4              004075dc f   OpenGL32:OPENGL32.dll
+ 0001:000065e2       _glPopMatrix@0             004075e2 f   OpenGL32:OPENGL32.dll
+ 0001:000065e8       _glPopAttrib@0             004075e8 f   OpenGL32:OPENGL32.dll
+ 0001:000065ee       _glCallLists@12            004075ee f   OpenGL32:OPENGL32.dll
+ 0001:000065f4       _glListBase@4              004075f4 f   OpenGL32:OPENGL32.dll
+ 0001:000065fa       _glPushAttrib@4            004075fa f   OpenGL32:OPENGL32.dll
+ 0001:00006600       _glTranslatef@12           00407600 f   OpenGL32:OPENGL32.dll
+ 0001:00006606       _glPushMatrix@0            00407606 f   OpenGL32:OPENGL32.dll
+ 0001:0000660c       _glRotatef@16              0040760c f   OpenGL32:OPENGL32.dll
+ 0001:00006612       _glMatrixMode@4            00407612 f   OpenGL32:OPENGL32.dll
+ 0001:00006618       _glLoadIdentity@0          00407618 f   OpenGL32:OPENGL32.dll
+ 0001:0000661e       _glEnd@0                   0040761e f   OpenGL32:OPENGL32.dll
+ 0001:00006624       _glVertex3f@12             00407624 f   OpenGL32:OPENGL32.dll
+ 0001:0000662a       _glNormal3f@12             0040762a f   OpenGL32:OPENGL32.dll
+ 0001:00006630       _glBegin@4                 00407630 f   OpenGL32:OPENGL32.dll
+ 0001:00006636       _glShadeModel@4            00407636 f   OpenGL32:OPENGL32.dll
+ 0001:0000663c       _glColor3d@24              0040763c f   OpenGL32:OPENGL32.dll
+ 0001:00006642       _glVertex3d@24             00407642 f   OpenGL32:OPENGL32.dll
+ 0001:00006648       _glTexCoord2f@8            00407648 f   OpenGL32:OPENGL32.dll
+ 0001:0000664e       _glEnable@4                0040764e f   OpenGL32:OPENGL32.dll
+ 0001:00006654       _wglDeleteContext@4        00407654 f   OpenGL32:OPENGL32.dll
+ 0001:0000665a       _wglMakeCurrent@8          0040765a f   OpenGL32:OPENGL32.dll
+ 0001:00006660       _wglCreateContext@4        00407660 f   OpenGL32:OPENGL32.dll
+ 0001:00006666       _glViewport@16             00407666 f   OpenGL32:OPENGL32.dll
+ 0001:0000666c       _glCullFace@4              0040766c f   OpenGL32:OPENGL32.dll
+ 0001:00006672       _glClearColor@16           00407672 f   OpenGL32:OPENGL32.dll
+ 0001:00006678       _glDepthFunc@4             00407678 f   OpenGL32:OPENGL32.dll
+ 0001:0000667e       _glClearDepth@8            0040767e f   OpenGL32:OPENGL32.dll
+ 0001:00006684       _glClear@4                 00407684 f   OpenGL32:OPENGL32.dll
+ 0001:0000668a       _glLightfv@12              0040768a f   OpenGL32:OPENGL32.dll
+ 0001:00006690       _glTexParameteri@12        00407690 f   OpenGL32:OPENGL32.dll
+ 0001:00006696       _glBindTexture@8           00407696 f   OpenGL32:OPENGL32.dll
+ 0001:0000669c       _glTexImage2D@36           0040769c f   OpenGL32:OPENGL32.dll
+ 0001:000066a2       _auxRGBImageLoadA@4        004076a2 f   glaux:image.obj
+ 0001:000066b0       _auxRGBImageLoadW@4        004076b0 f   glaux:image.obj
+ 0001:000066be       _auxDIBImageLoadA@4        004076be f   glaux:image.obj
+ 0001:000066cc       _auxDIBImageLoadW@4        004076cc f   glaux:image.obj
+ 0001:000066da       _RawImageOpenAW@8          004076da f   glaux:tkimage.obj
+ 0001:000069d2       _RawImageClose@4           004079d2 f   glaux:tkimage.obj
+ 0001:00006a27       _RawImageGetRow@16         00407a27 f   glaux:tkimage.obj
+ 0001:00006b18       _RawImageGetData@8         00407b18 f   glaux:tkimage.obj
+ 0001:00006bcc       _tkRGBImageLoad@4          00407bcc f   glaux:tkimage.obj
+ 0001:00006bda       _tkRGBImageLoadAW@8        00407bda f   glaux:tkimage.obj
+ 0001:00006c48       _DibNumColors@4            00407c48 f   glaux:tkdib.obj
+ 0001:00006c9e       _tkDIBImageLoad@4          00407c9e f   glaux:tkdib.obj
+ 0001:00006cac       _tkDIBImageLoadAW@8        00407cac f   glaux:tkdib.obj
+ 0001:000071a4       _tkErrorPopups@4           004081a4 f   glaux:tk.obj
+ 0001:000071b0       _tkCloseWindow@0           004081b0 f   glaux:tk.obj
+ 0001:000071bc       _tkExec@0                  004081bc f   glaux:tk.obj
+ 0001:00007266       _tkExposeFunc@4            00408266 f   glaux:tk.obj
+ 0001:00007272       _tkReshapeFunc@4           00408272 f   glaux:tk.obj
+ 0001:0000727e       _tkDisplayFunc@4           0040827e f   glaux:tk.obj
+ 0001:0000728a       _tkKeyDownFunc@4           0040828a f   glaux:tk.obj
+ 0001:00007296       _tkMouseDownFunc@4         00408296 f   glaux:tk.obj
+ 0001:000072a2       _tkMouseUpFunc@4           004082a2 f   glaux:tk.obj
+ 0001:000072ae       _tkMouseMoveFunc@4         004082ae f   glaux:tk.obj
+ 0001:000072ba       _tkIdleFunc@4              004082ba f   glaux:tk.obj
+ 0001:000072c6       _tkInitPosition@16         004082c6 f   glaux:tk.obj
+ 0001:0000732f       _tkInitDisplayMode@4       0040832f f   glaux:tk.obj
+ 0001:0000733b       _tkInitDisplayModePolicy@4 0040833b f   glaux:tk.obj
+ 0001:00007347       _tkInitDisplayModeID@4     00408347 f   glaux:tk.obj
+ 0001:00007356       _tkInitWindow@4            00408356 f   glaux:tk.obj
+ 0001:00007364       _tkInitWindowAW@8          00408364 f   glaux:tk.obj
+ 0001:000075f9       _tkQuit@0                  004085f9 f   glaux:tk.obj
+ 0001:0000760d       _tkSetOneColor@16          0040860d f   glaux:tk.obj
+ 0001:000076c4       _tkSetFogRamp@8            004086c4 f   glaux:tk.obj
+ 0001:000077d2       _tkSetGreyRamp@0           004087d2 f   glaux:tk.obj
+ 0001:0000788f       _tkSetRGBMap@8             0040888f f   glaux:tk.obj
+ 0001:0000790b       _tkSwapBuffers@0           0040890b f   glaux:tk.obj
+ 0001:00007918       _tkGetColorMapSize@0       00408918 f   glaux:tk.obj
+ 0001:0000793c       _tkGetMouseLoc@8           0040893c f   glaux:tk.obj
+ 0001:00007975       _tkGetHWND@0               00408975 f   glaux:tk.obj
+ 0001:0000797b       _tkGetHDC@0                0040897b f   glaux:tk.obj
+ 0001:00007981       _tkGetHRC@0                00408981 f   glaux:tk.obj
+ 0001:00007987       _tkGetDisplayModePolicy@0  00408987 f   glaux:tk.obj
+ 0001:0000798d       _tkGetDisplayModeID@0      0040898d f   glaux:tk.obj
+ 0001:00007993       _tkGetDisplayMode@0        00408993 f   glaux:tk.obj
+ 0001:00007999       _tkWndProc@16              00408999 f   glaux:tk.obj
+ 0001:00007d90       _GetRegistrySysColors@8    00408d90 f   glaux:tk.obj
+ 0001:00007e49       _GrabStaticEntries@4       00408e49 f   glaux:tk.obj
+ 0001:00007ecc       _ReleaseStaticEntries@4    00408ecc f   glaux:tk.obj
+ 0001:00007f25       _ComponentFromIndex@12     00408f25 f   glaux:tk.obj
+ 0001:00007f5e       _UpdateStaticMapping@4     00408f5e f   glaux:tk.obj
+ 0001:000080a7       _FillRgbPaletteEntries@12  004090a7 f   glaux:tk.obj
+ 0001:0000817b       _FlushPalette@8            0040917b f   glaux:tk.obj
+ 0001:000081ef       _CreateRGBPalette@4        004091ef f   glaux:tk.obj
+ 0001:000082ae       _CreateCIPalette@4         004092ae f   glaux:tk.obj
+ 0001:000083d9       _FindPixelFormat@8         004093d9 f   glaux:tk.obj
+ 0001:00008467       _FindBestPixelFormat@12    00409467 f   glaux:tk.obj
+ 0001:00008509       _FindExactPixelFormat@12   00409509 f   glaux:tk.obj
+ 0001:00008636       _IsPixelFormatValid@12     00409636 f   glaux:tk.obj
+ 0001:0000866e       _PrintMessage              0040966e f   glaux:tk.obj
+ 0001:000086b3       _DelayPaletteRealization@0 004096b3 f   glaux:tk.obj
+ 0001:000086e9       _RealizePaletteNow@12      004096e9 f   glaux:tk.obj
+ 0001:00008755       _ForceRedraw@4             00409755 f   glaux:tk.obj
+ 0001:00008781       _PixelFormatDescriptorFromDc@8 00409781 f   glaux:tk.obj
+ 0001:000087c9       _DestroyThisWindow@4       004097c9 f   glaux:tk.obj
+ 0001:000087dd       _CleanUp@0                 004097dd f   glaux:tk.obj
+ 0001:000088af       _AllocateMemory@4          004098af f   glaux:tk.obj
+ 0001:000088be       _AllocateZeroedMemory@4    004098be f   glaux:tk.obj
+ 0001:000088cd       _FreeMemory@4              004098cd f   glaux:tk.obj
+ 0001:000088da       _gluPerspective@32         004098da f   glu32:GLU32.dll
+ 0001:000088e0       _gluBuild2DMipmaps@28      004098e0 f   glu32:GLU32.dll
+ 0001:00009960       _DirectInputCreateA@16     0040a960 f   dinput:DINPUT.dll
+ 0001:00009970       __chkesp                   0040a970 f   LIBCD:chkesp.obj
+ 0001:000099b0       _fclose                    0040a9b0 f   LIBCD:fclose.obj
+ 0001:00009a90       __fsopen                   0040aa90 f   LIBCD:fopen.obj
+ 0001:00009b80       _fopen                     0040ab80 f   LIBCD:fopen.obj
+ 0001:00009ba0       _rewind                    0040aba0 f   LIBCD:rewind.obj
+ 0001:00009c70       ??2@YAPAXI@Z               0040ac70 f   LIBCD:new.obj
+ 0001:00009c90       _fread                     0040ac90 f   LIBCD:fread.obj
+ 0001:00009e60       _fseek                     0040ae60 f   LIBCD:fseek.obj
+ 0001:00009f90       _ftell                     0040af90 f   LIBCD:ftell.obj
+ 0001:0000a220       __fpmath                   0040b220 f   LIBCD:fpinit.obj
+ 0001:0000a250       __fpclear                  0040b250 f   LIBCD:fpinit.obj
+ 0001:0000a260       __cfltcvt_init             0040b260 f   LIBCD:fpinit.obj
+ 0001:0000a2b0       ___setfflag                0040b2b0 f   LIBCD:fpinit.obj
+ 0001:0000a2d0       _memcpy                    0040b2d0 f   LIBCD:memcpy.obj
+ 0001:0000a610       _strlen                    0040b610 f   LIBCD:strlen.obj
+ 0001:0000a690       _vsprintf                  0040b690 f   LIBCD:vsprintf.obj
+ 0001:0000a790       _fgetc                     0040b790 f   LIBCD:fgetc.obj
+ 0001:0000a820       _getc                      0040b820 f   LIBCD:fgetc.obj
+ 0001:0000a840       _memset                    0040b840 f   LIBCD:memset.obj
+ 0001:0000a8a0       __CIsqrt                   0040b8a0 f   LIBCD:sqrt.obj
+ 0001:0000a8b4       _sqrt                      0040b8b4 f   LIBCD:sqrt.obj
+ 0001:0000a960       ??3@YAXPAX@Z               0040b960 f   LIBCD:dbgdel.obj
+ 0001:0000a9f0       _abs                       0040b9f0 f   LIBCD:abs.obj
+ 0001:0000aa20       _WinMainCRTStartup         0040ba20 f   LIBCD:wincrt0.obj
+ 0001:0000ab80       __amsg_exit                0040bb80 f   LIBCD:wincrt0.obj
+ 0001:0000abe0       _malloc                    0040bbe0 f   LIBCD:dbgheap.obj
+ 0001:0000ac00       __malloc_dbg               0040bc00 f   LIBCD:dbgheap.obj
+ 0001:0000ac30       __nh_malloc                0040bc30 f   LIBCD:dbgheap.obj
+ 0001:0000ac50       __nh_malloc_dbg            0040bc50 f   LIBCD:dbgheap.obj
+ 0001:0000aca0       __heap_alloc               0040bca0 f   LIBCD:dbgheap.obj
+ 0001:0000acc0       __heap_alloc_dbg           0040bcc0 f   LIBCD:dbgheap.obj
+ 0001:0000afe0       _calloc                    0040bfe0 f   LIBCD:dbgheap.obj
+ 0001:0000b000       __calloc_dbg               0040c000 f   LIBCD:dbgheap.obj
+ 0001:0000b060       _realloc                   0040c060 f   LIBCD:dbgheap.obj
+ 0001:0000b080       __realloc_dbg              0040c080 f   LIBCD:dbgheap.obj
+ 0001:0000b5d0       __expand                   0040c5d0 f   LIBCD:dbgheap.obj
+ 0001:0000b5f0       __expand_dbg               0040c5f0 f   LIBCD:dbgheap.obj
+ 0001:0000b620       _free                      0040c620 f   LIBCD:dbgheap.obj
+ 0001:0000b640       __free_dbg                 0040c640 f   LIBCD:dbgheap.obj
+ 0001:0000ba30       __msize                    0040ca30 f   LIBCD:dbgheap.obj
+ 0001:0000ba50       __msize_dbg                0040ca50 f   LIBCD:dbgheap.obj
+ 0001:0000bba0       __CrtSetBreakAlloc         0040cba0 f   LIBCD:dbgheap.obj
+ 0001:0000bbc0       __CrtSetDbgBlockType       0040cbc0 f   LIBCD:dbgheap.obj
+ 0001:0000bc50       __CrtSetAllocHook          0040cc50 f   LIBCD:dbgheap.obj
+ 0001:0000bd00       __CrtCheckMemory           0040cd00 f   LIBCD:dbgheap.obj
+ 0001:0000c060       __CrtSetDbgFlag            0040d060 f   LIBCD:dbgheap.obj
+ 0001:0000c090       __CrtDoForAllClientObjects 0040d090 f   LIBCD:dbgheap.obj
+ 0001:0000c0f0       __CrtIsValidPointer        0040d0f0 f   LIBCD:dbgheap.obj
+ 0001:0000c140       __CrtIsValidHeapPointer    0040d140 f   LIBCD:dbgheap.obj
+ 0001:0000c1d0       __CrtIsMemoryBlock         0040d1d0 f   LIBCD:dbgheap.obj
+ 0001:0000c2a0       __CrtSetDumpClient         0040d2a0 f   LIBCD:dbgheap.obj
+ 0001:0000c2c0       __CrtMemCheckpoint         0040d2c0 f   LIBCD:dbgheap.obj
+ 0001:0000c420       __CrtMemDifference         0040d420 f   LIBCD:dbgheap.obj
+ 0001:0000c550       __CrtMemDumpAllObjectsSince 0040d550 f   LIBCD:dbgheap.obj
+ 0001:0000c920       __CrtDumpMemoryLeaks       0040d920 f   LIBCD:dbgheap.obj
+ 0001:0000c9a0       __CrtMemDumpStatistics     0040d9a0 f   LIBCD:dbgheap.obj
+ 0001:0000ca68       __ftol                     0040da68 f   LIBCD:ftol.obj
+ 0001:0000ca90       _sscanf                    0040da90 f   LIBCD:sscanf.obj
+ 0001:0000cb50       __CrtDbgBreak              0040db50 f   LIBCD:dbgrpt.obj
+ 0001:0000cb60       __CrtSetReportMode         0040db60 f   LIBCD:dbgrpt.obj
+ 0001:0000cbc0       __CrtSetReportFile         0040dbc0 f   LIBCD:dbgrpt.obj
+ 0001:0000cc40       __CrtSetReportHook         0040dc40 f   LIBCD:dbgrpt.obj
+ 0001:0000cc60       __CrtDbgReport             0040dc60 f   LIBCD:dbgrpt.obj
+ 0001:0000d300       __close                    0040e300 f   LIBCD:close.obj
+ 0001:0000d3f0       __freebuf                  0040e3f0 f   LIBCD:_freebuf.obj
+ 0001:0000d490       _fflush                    0040e490 f   LIBCD:fflush.obj
+ 0001:0000d4f0       __flush                    0040e4f0 f   LIBCD:fflush.obj
+ 0001:0000d5b0       __flushall                 0040e5b0 f   LIBCD:fflush.obj
+ 0001:0000d6a0       __openfile                 0040e6a0 f   LIBCD:_open.obj
+ 0001:0000da30       __getstream                0040ea30 f   LIBCD:stream.obj
+ 0001:0000db20       __lseek                    0040eb20 f   LIBCD:lseek.obj
+ 0001:0000dc10       __ioinit                   0040ec10 f   LIBCD:ioinit.obj
+ 0001:0000df20       __ioterm                   0040ef20 f   LIBCD:ioinit.obj
+ 0001:0000df80       __filbuf                   0040ef80 f   LIBCD:_filbuf.obj
+ 0001:0000e160       __read                     0040f160 f   LIBCD:read.obj
+ 0001:0000e5c0       __cinit                    0040f5c0 f   LIBCD:crt0dat.obj
+ 0001:0000e600       _exit                      0040f600 f   LIBCD:crt0dat.obj
+ 0001:0000e620       __exit                     0040f620 f   LIBCD:crt0dat.obj
+ 0001:0000e640       __cexit                    0040f640 f   LIBCD:crt0dat.obj
+ 0001:0000e660       __c_exit                   0040f660 f   LIBCD:crt0dat.obj
+ 0001:0000e790       __setdefaultprecision      0040f790 f   LIBCD:fp8.obj
+ 0001:0000e7b0       __ms_p5_test_fdiv          0040f7b0 f   LIBCD:testfdiv.obj
+ 0001:0000e810       __ms_p5_mp_test_fdiv       0040f810 f   LIBCD:testfdiv.obj
+ 0001:0000e860       __forcdecpt                0040f860 f   LIBCD:cvt.obj
+ 0001:0000e910       __cropzeros                0040f910 f   LIBCD:cvt.obj
+ 0001:0000e9f0       __positive                 0040f9f0 f   LIBCD:cvt.obj
+ 0001:0000ea20       __fassign                  0040fa20 f   LIBCD:cvt.obj
+ 0001:0000ea70       __cftoe                    0040fa70 f   LIBCD:cvt.obj
+ 0001:0000ec30       __cftof                    0040fc30 f   LIBCD:cvt.obj
+ 0001:0000edc0       __cftog                    0040fdc0 f   LIBCD:cvt.obj
+ 0001:0000ef30       __cfltcvt                  0040ff30 f   LIBCD:cvt.obj
+ 0001:0000efc0       __flsbuf                   0040ffc0 f   LIBCD:_flsbuf.obj
+ 0001:0000f240       __output                   00410240 f   LIBCD:output.obj
+ 0001:000100e0       __trandisp1                004110e0 f   LIBCD:87disp.obj
+ 0001:00010147       __trandisp2                00411147 f   LIBCD:87disp.obj
+ 0001:000101d3       __rttospopde               004111d3 f   LIBCD:87disp.obj
+ 0001:000101d8       __rttospop                 004111d8 f   LIBCD:87disp.obj
+ 0001:000101da       __rtnospop                 004111da f   LIBCD:87disp.obj
+ 0001:000101dc       __rttosnpop                004111dc f   LIBCD:87disp.obj
+ 0001:000101dd       __rtnospopde               004111dd f   LIBCD:87disp.obj
+ 0001:000101e4       __rtzeropop                004111e4 f   LIBCD:87disp.obj
+ 0001:000101e6       __rtzeronpop               004111e6 f   LIBCD:87disp.obj
+ 0001:000101eb       __rtonepop                 004111eb f   LIBCD:87disp.obj
+ 0001:000101ed       __rtonenpop                004111ed f   LIBCD:87disp.obj
+ 0001:000101f2       __tosnan1                  004111f2 f   LIBCD:87disp.obj
+ 0001:0001021d       __nosnan2                  0041121d f   LIBCD:87disp.obj
+ 0001:0001021f       __tosnan2                  0041121f f   LIBCD:87disp.obj
+ 0001:00010247       __nan2                     00411247 f   LIBCD:87disp.obj
+ 0001:00010286       __rtindfpop                00411286 f   LIBCD:87disp.obj
+ 0001:00010288       __rtindfnpop               00411288 f   LIBCD:87disp.obj
+ 0001:00010299       __rttosnpopde              00411299 f   LIBCD:87disp.obj
+ 0001:000102a3       __rtchsifneg               004112a3 f   LIBCD:87disp.obj
+ 0001:000102b0       __startTwoArgErrorHandling 004112b0 f   LIBCD:genexcep.obj
+ 0001:000102c7       __startOneArgErrorHandling 004112c7 f   LIBCD:genexcep.obj
+ 0001:00010310       __twoToTOS                 00411310 f   LIBCD:common.obj
+ 0001:00010325       __load_CW                  00411325 f   LIBCD:common.obj
+ 0001:0001033c       __convertTOStoQNaN         0041133c f   LIBCD:common.obj
+ 0001:00010355       __fload_withFB             00411355 f   LIBCD:common.obj
+ 0001:00010398       __checkTOS_withFB          00411398 f   LIBCD:common.obj
+ 0001:000103ae       __fast_exit                004113ae f   LIBCD:common.obj
+ 0001:000103bb       __math_exit                004113bb f   LIBCD:common.obj
+ 0001:000103e5       __check_overflow_exit      004113e5 f   LIBCD:common.obj
+ 0001:000103f9       __check_range_exit         004113f9 f   LIBCD:common.obj
+ 0001:000104a0       __XcptFilter               004114a0 f   LIBCD:winxfltr.obj
+ 0001:000106b0       __wincmdln                 004116b0 f   LIBCD:wincmdln.obj
+ 0001:00010770       __setenvp                  00411770 f   LIBCD:stdenvp.obj
+ 0001:000108c0       __setargv                  004118c0 f   LIBCD:stdargv.obj
+ 0001:00010dd0       ___crtGetEnvironmentStringsA 00411dd0 f   LIBCD:a_env.obj
+ 0001:00010ff0       __heap_init                00411ff0 f   LIBCD:heapinit.obj
+ 0001:00011040       __heap_term                00412040 f   LIBCD:heapinit.obj
+ 0001:000110dc       __global_unwind2           004120dc f   LIBCD:exsup.obj
+ 0001:0001111e       __local_unwind2            0041211e f   LIBCD:exsup.obj
+ 0001:00011176       __NLG_Return2              00412176 f   LIBCD:exsup.obj
+ 0001:00011186       __abnormal_termination     00412186 f   LIBCD:exsup.obj
+ 0001:000111a9       __NLG_Notify1              004121a9 f   LIBCD:exsup.obj
+ 0001:000111b2       __NLG_Notify               004121b2 f   LIBCD:exsup.obj
+ 0001:000111c5       __NLG_Dispatch             004121c5 f   LIBCD:exsup.obj
+ 0001:000111d4       __except_handler3          004121d4 f   LIBCD:exsup3.obj
+ 0001:00011291       __seh_longjmp_unwind@4     00412291 f   LIBCD:exsup3.obj
+ 0001:000112b0       __FF_MSGBANNER             004122b0 f   LIBCD:crt0msg.obj
+ 0001:00011300       __NMSG_WRITE               00412300 f   LIBCD:crt0msg.obj
+ 0001:000114c0       __GET_RTERRMSG             004124c0 f   LIBCD:crt0msg.obj
+ 0001:00011510       ?_set_new_handler@@YAP6AHI@ZP6AHI@Z@Z 00412510 f   LIBCD:handler.obj
+ 0001:00011530       ?_query_new_handler@@YAP6AHI@ZXZ 00412530 f   LIBCD:handler.obj
+ 0001:00011540       __callnewh                 00412540 f   LIBCD:handler.obj
+ 0001:00011570       __malloc_base              00412570 f   LIBCD:malloc.obj
+ 0001:00011590       __nh_malloc_base           00412590 f   LIBCD:malloc.obj
+ 0001:000115f0       __heap_alloc_base          004125f0 f   LIBCD:malloc.obj
+ 0001:00011650       __CrtDefaultAllocHook      00412650 f   LIBCD:dbghook.obj
+ 0001:00011660       __expand_base              00412660 f   LIBCD:expand.obj
+ 0001:000116f0       __realloc_base             004126f0 f   LIBCD:realloc.obj
+ 0001:000118c0       __free_base                004128c0 f   LIBCD:free.obj
+ 0001:00011910       __heapchk                  00412910 f   LIBCD:heapchk.obj
+ 0001:00011970       __heapset                  00412970 f   LIBCD:heapchk.obj
+ 0001:00011980       __get_sbh_threshold        00412980 f   LIBCD:sbheap.obj
+ 0001:00011990       __set_sbh_threshold        00412990 f   LIBCD:sbheap.obj
+ 0001:000119b0       ___sbh_heap_init           004129b0 f   LIBCD:sbheap.obj
+ 0001:00011a10       ___sbh_find_block          00412a10 f   LIBCD:sbheap.obj
+ 0001:00011a70       ___sbh_verify_block        00412a70 f   LIBCD:sbheap.obj
+ 0001:00011ad0       ___sbh_free_block          00412ad0 f   LIBCD:sbheap.obj
+ 0001:000120a0       ___sbh_alloc_block         004130a0 f   LIBCD:sbheap.obj
+ 0001:000125e0       ___sbh_alloc_new_region    004135e0 f   LIBCD:sbheap.obj
+ 0001:000126f0       ___sbh_alloc_new_group     004136f0 f   LIBCD:sbheap.obj
+ 0001:000128e0       ___sbh_resize_block        004138e0 f   LIBCD:sbheap.obj
+ 0001:00012ed0       ___sbh_heapmin             00413ed0 f   LIBCD:sbheap.obj
+ 0001:00013000       ___sbh_heap_check          00414000 f   LIBCD:sbheap.obj
+ 0001:00013620       _sprintf                   00414620 f   LIBCD:sprintf.obj
+ 0001:00013720       __isctype                  00414720 f   LIBCD:isctype.obj
+ 0001:000137e0       __input                    004147e0 f   LIBCD:input.obj
+ 0001:00014ce0       __itoa                     00415ce0 f   LIBCD:xtoa.obj
+ 0001:00014e00       __ltoa                     00415e00 f   LIBCD:xtoa.obj
+ 0001:00014e40       __ultoa                    00415e40 f   LIBCD:xtoa.obj
+ 0001:00014e60       __i64toa                   00415e60 f   LIBCD:xtoa.obj
+ 0001:00014fb0       __ui64toa                  00415fb0 f   LIBCD:xtoa.obj
+ 0001:00014fd0       __snprintf                 00415fd0 f   LIBCD:snprintf.obj
+ 0001:000150d0       _strcpy                    004160d0 f   LIBCD:strcat.obj
+ 0001:000150e0       _strcat                    004160e0 f   LIBCD:strcat.obj
+ 0001:000151c0       __vsnprintf                004161c0 f   LIBCD:vsnprint.obj
+ 0001:000152c0       __alloca_probe             004162c0 f   LIBCD:chkstk.obj
+ 0001:000152c0       __chkstk                   004162c0 f   LIBCD:chkstk.obj
+ 0001:000152f0       _signal                    004162f0 f   LIBCD:winsig.obj
+ 0001:00015500       _raise                     00416500 f   LIBCD:winsig.obj
+ 0001:00015720       ___crtMessageBoxA          00416720 f   LIBCD:crtmbox.obj
+ 0001:000157e0       _strncpy                   004167e0 f   LIBCD:strncpy.obj
+ 0001:000158e0       __dosmaperr                004168e0 f   LIBCD:dosmap.obj
+ 0001:00015970       __alloc_osfhnd             00416970 f   LIBCD:osfinfo.obj
+ 0001:00015aa0       __set_osfhnd               00416aa0 f   LIBCD:osfinfo.obj
+ 0001:00015b50       __free_osfhnd              00416b50 f   LIBCD:osfinfo.obj
+ 0001:00015c20       __get_osfhandle            00416c20 f   LIBCD:osfinfo.obj
+ 0001:00015c80       __open_osfhandle           00416c80 f   LIBCD:osfinfo.obj
+ 0001:00015d70       __commit                   00416d70 f   LIBCD:commit.obj
+ 0001:00015e20       __write                    00416e20 f   LIBCD:write.obj
+ 0001:000160d0       ___initstdio               004170d0 f   LIBCD:_file.obj
+ 0001:00016200       ___endstdio                00417200 f   LIBCD:_file.obj
+ 0001:00016220       __open                     00417220 f   LIBCD:open.obj
+ 0001:00016260       __sopen                    00417260 f   LIBCD:open.obj
+ 0001:00016750       __getbuf                   00417750 f   LIBCD:_getbuf.obj
+ 0001:00016820       __statusfp                 00417820 f   LIBCD:ieee87.obj
+ 0001:00016840       __clearfp                  00417840 f   LIBCD:ieee87.obj
+ 0001:00016860       __control87                00417860 f   LIBCD:ieee87.obj
+ 0001:000168b0       __controlfp                004178b0 f   LIBCD:ieee87.obj
+ 0001:000168d0       __fpreset                  004178d0 f   LIBCD:ieee87.obj
+ 0001:00016cc0       __tolower                  00417cc0 f   LIBCD:tolower.obj
+ 0001:00016cd0       _tolower                   00417cd0 f   LIBCD:tolower.obj
+ 0001:00016e00       __ZeroTail                 00417e00 f   LIBCD:intrncvt.obj
+ 0001:00016e90       __IncMan                   00417e90 f   LIBCD:intrncvt.obj
+ 0001:00016f40       __RoundMan                 00417f40 f   LIBCD:intrncvt.obj
+ 0001:00017020       __CopyMan                  00418020 f   LIBCD:intrncvt.obj
+ 0001:00017070       __FillZeroMan              00418070 f   LIBCD:intrncvt.obj
+ 0001:000170a0       __IsZeroMan                004180a0 f   LIBCD:intrncvt.obj
+ 0001:000170e0       __ShrMan                   004180e0 f   LIBCD:intrncvt.obj
+ 0001:000171d0       __ld12cvt                  004181d0 f   LIBCD:intrncvt.obj
+ 0001:00017420       __ld12tod                  00418420 f   LIBCD:intrncvt.obj
+ 0001:00017440       __ld12tof                  00418440 f   LIBCD:intrncvt.obj
+ 0001:00017460       __ld12told                 00418460 f   LIBCD:intrncvt.obj
+ 0001:00017520       __atodbl                   00418520 f   LIBCD:intrncvt.obj
+ 0001:00017560       __atoldbl                  00418560 f   LIBCD:intrncvt.obj
+ 0001:000175a0       __atoflt                   004185a0 f   LIBCD:intrncvt.obj
+ 0001:000175e0       __fptostr                  004185e0 f   LIBCD:_fptostr.obj
+ 0001:000176e0       __fltout                   004186e0 f   LIBCD:cfout.obj
+ 0001:00017760       ___dtold                   00418760 f   LIBCD:cfout.obj
+ 0001:000178d0       _memmove                   004188d0 f   LIBCD:memmove.obj
+ 0001:00017c10       __fptrap                   00418c10 f   LIBCD:crt0fp.obj
+ 0001:00017c20       __isatty                   00418c20 f   LIBCD:isatty.obj
+ 0001:00017c50       _wctomb                    00418c50 f   LIBCD:wctomb.obj
+ 0001:00017cf0       __aulldiv                  00418cf0 f   LIBCD:ulldiv.obj
+ 0001:00017d60       __aullrem                  00418d60 f   LIBCD:ullrem.obj
+ 0001:00017de0       __87except                 00418de0 f   LIBCD:87except.obj
+ 0001:00017f60       __ismbbkalnum              00418f60 f   LIBCD:ismbbyte.obj
+ 0001:00017f80       __ismbbkprint              00418f80 f   LIBCD:ismbbyte.obj
+ 0001:00017fa0       __ismbbkpunct              00418fa0 f   LIBCD:ismbbyte.obj
+ 0001:00017fc0       __ismbbalnum               00418fc0 f   LIBCD:ismbbyte.obj
+ 0001:00017fe0       __ismbbalpha               00418fe0 f   LIBCD:ismbbyte.obj
+ 0001:00018000       __ismbbgraph               00419000 f   LIBCD:ismbbyte.obj
+ 0001:00018020       __ismbbprint               00419020 f   LIBCD:ismbbyte.obj
+ 0001:00018040       __ismbbpunct               00419040 f   LIBCD:ismbbyte.obj
+ 0001:00018060       __ismbblead                00419060 f   LIBCD:ismbbyte.obj
+ 0001:00018080       __ismbbtrail               00419080 f   LIBCD:ismbbyte.obj
+ 0001:000180a0       __ismbbkana                004190a0 f   LIBCD:ismbbyte.obj
+ 0001:00018150       __setmbcp                  00419150 f   LIBCD:mbctype.obj
+ 0001:000188c0       __getmbcp                  004198c0 f   LIBCD:mbctype.obj
+ 0001:000188e0       ___initmbctable            004198e0 f   LIBCD:mbctype.obj
+ 0001:00018910       ___crtGetStringTypeA       00419910 f   LIBCD:a_str.obj
+ 0001:00018ad0       _mbtowc                    00419ad0 f   LIBCD:mbtowc.obj
+ 0001:00018c30       _isalpha                   00419c30 f   LIBCD:_ctype.obj
+ 0001:00018c80       _isupper                   00419c80 f   LIBCD:_ctype.obj
+ 0001:00018cc0       _islower                   00419cc0 f   LIBCD:_ctype.obj
+ 0001:00018d00       _isdigit                   00419d00 f   LIBCD:_ctype.obj
+ 0001:00018d40       _isxdigit                  00419d40 f   LIBCD:_ctype.obj
+ 0001:00018d90       _isspace                   00419d90 f   LIBCD:_ctype.obj
+ 0001:00018dd0       _ispunct                   00419dd0 f   LIBCD:_ctype.obj
+ 0001:00018e10       _isalnum                   00419e10 f   LIBCD:_ctype.obj
+ 0001:00018e60       _isprint                   00419e60 f   LIBCD:_ctype.obj
+ 0001:00018eb0       _isgraph                   00419eb0 f   LIBCD:_ctype.obj
+ 0001:00018f00       _iscntrl                   00419f00 f   LIBCD:_ctype.obj
+ 0001:00018f40       ___isascii                 00419f40 f   LIBCD:_ctype.obj
+ 0001:00018f50       ___toascii                 00419f50 f   LIBCD:_ctype.obj
+ 0001:00018f60       ___iscsymf                 00419f60 f   LIBCD:_ctype.obj
+ 0001:00018fc0       ___iscsym                  00419fc0 f   LIBCD:_ctype.obj
+ 0001:00019020       __allshl                   0041a020 f   LIBCD:llshl.obj
+ 0001:00019040       _ungetc                    0041a040 f   LIBCD:ungetc.obj
+ 0001:00019180       __fcloseall                0041a180 f   LIBCD:closeall.obj
+ 0001:00019230       __chsize                   0041a230 f   LIBCD:chsize.obj
+ 0001:000194a0       ___crtLCMapStringA         0041a4a0 f   LIBCD:a_map.obj
+ 0001:00019800       ___addl                    0041a800 f   LIBCD:mantold.obj
+ 0001:00019840       ___add_12                  0041a840 f   LIBCD:mantold.obj
+ 0001:000198f0       ___shl_12                  0041a8f0 f   LIBCD:mantold.obj
+ 0001:00019950       ___shr_12                  0041a950 f   LIBCD:mantold.obj
+ 0001:000199c0       ___mtold12                 0041a9c0 f   LIBCD:mantold.obj
+ 0001:00019b00       ___strgtold12              0041ab00 f   LIBCD:strgtold.obj
+ 0001:0001a630       ___STRINGTOLD              0041b630 f   LIBCD:strgtold.obj
+ 0001:0001a680       _$I10_OUTPUT               0041b680 f   LIBCD:x10fout.obj
+ 0001:0001aba0       __handle_qnan1             0041bba0 f   LIBCD:fpexcept.obj
+ 0001:0001ac00       __handle_qnan2             0041bc00 f   LIBCD:fpexcept.obj
+ 0001:0001ac70       __except1                  0041bc70 f   LIBCD:fpexcept.obj
+ 0001:0001ad30       __except2                  0041bd30 f   LIBCD:fpexcept.obj
+ 0001:0001ae00       __raise_exc                0041be00 f   LIBCD:fpexcept.obj
+ 0001:0001b2d0       __handle_exc               0041c2d0 f   LIBCD:fpexcept.obj
+ 0001:0001b650       __umatherr                 0041c650 f   LIBCD:fpexcept.obj
+ 0001:0001b6f0       __set_errno                0041c6f0 f   LIBCD:fpexcept.obj
+ 0001:0001b770       __errcode                  0041c770 f   LIBCD:fpexcept.obj
+ 0001:0001b7f0       __matherr                  0041c7f0 f   LIBCD:matherr.obj
+ 0001:0001b800       __statfp                   0041c800 f   LIBCD:fpctrl.obj
+ 0001:0001b820       __clrfp                    0041c820 f   LIBCD:fpctrl.obj
+ 0001:0001b840       __ctrlfp                   0041c840 f   LIBCD:fpctrl.obj
+ 0001:0001b880       __set_statfp               0041c880 f   LIBCD:fpctrl.obj
+ 0001:0001b900       __setmode                  0041c900 f   LIBCD:setmode.obj
+ 0001:0001ba00       ___ld12mul                 0041ca00 f   LIBCD:tenpow.obj
+ 0001:0001be40       ___multtenpow12            0041ce40 f   LIBCD:tenpow.obj
+ 0001:0001bf10       __set_exp                  0041cf10 f   LIBCD:util.obj
+ 0001:0001bf50       __get_exp                  0041cf50 f   LIBCD:util.obj
+ 0001:0001bf80       __add_exp                  0041cf80 f   LIBCD:util.obj
+ 0001:0001bfc0       __set_bexp                 0041cfc0 f   LIBCD:util.obj
+ 0001:0001c000       __sptype                   0041d000 f   LIBCD:util.obj
+ 0001:0001c080       __decomp                   0041d080 f   LIBCD:util.obj
+ 0001:0001c1ba       _SetFilePointer@16         0041d1ba f   kernel32:KERNEL32.dll
+ 0001:0001c1c0       _ReadFile@20               0041d1c0 f   kernel32:KERNEL32.dll
+ 0001:0001c1c6       _CreateFileA@28            0041d1c6 f   kernel32:KERNEL32.dll
+ 0001:0001c1cc       _CreateFileW@28            0041d1cc f   kernel32:KERNEL32.dll
+ 0001:0001c1d2       _CloseHandle@4             0041d1d2 f   kernel32:KERNEL32.dll
+ 0001:0001c1d8       _UnmapViewOfFile@4         0041d1d8 f   kernel32:KERNEL32.dll
+ 0001:0001c1de       _LocalFree@4               0041d1de f   kernel32:KERNEL32.dll
+ 0001:0001c1e4       _LocalAlloc@8              0041d1e4 f   kernel32:KERNEL32.dll
+ 0001:0001c1ea       _MapViewOfFile@20          0041d1ea f   kernel32:KERNEL32.dll
+ 0001:0001c1f0       _CreateFileMappingA@24     0041d1f0 f   kernel32:KERNEL32.dll
+ 0001:0001c1f6       _GetVersionExA@4           0041d1f6 f   kernel32:KERNEL32.dll
+ 0001:0001c1fc       _GetModuleHandleA@4        0041d1fc f   kernel32:KERNEL32.dll
+ 0001:0001c202       _ExitProcess@4             0041d202 f   kernel32:KERNEL32.dll
+ 0001:0001c208       _Sleep@4                   0041d208 f   kernel32:KERNEL32.dll
+ 0001:0001c20e       _GetStartupInfoA@4         0041d20e f   kernel32:KERNEL32.dll
+ 0001:0001c214       _GetCommandLineA@0         0041d214 f   kernel32:KERNEL32.dll
+ 0001:0001c21a       _GetVersion@0              0041d21a f   kernel32:KERNEL32.dll
+ 0001:0001c220       _IsBadWritePtr@8           0041d220 f   kernel32:KERNEL32.dll
+ 0001:0001c226       _IsBadReadPtr@8            0041d226 f   kernel32:KERNEL32.dll
+ 0001:0001c22c       _HeapValidate@12           0041d22c f   kernel32:KERNEL32.dll
+ 0001:0001c232       _DebugBreak@0              0041d232 f   kernel32:KERNEL32.dll
+ 0001:0001c238       _GetStdHandle@4            0041d238 f   kernel32:KERNEL32.dll
+ 0001:0001c23e       _WriteFile@20              0041d23e f   kernel32:KERNEL32.dll
+ 0001:0001c244       _InterlockedDecrement@4    0041d244 f   kernel32:KERNEL32.dll
+ 0001:0001c24a       _OutputDebugStringA@4      0041d24a f   kernel32:KERNEL32.dll
+ 0001:0001c250       _GetProcAddress@8          0041d250 f   kernel32:KERNEL32.dll
+ 0001:0001c256       _LoadLibraryA@4            0041d256 f   kernel32:KERNEL32.dll
+ 0001:0001c25c       _InterlockedIncrement@4    0041d25c f   kernel32:KERNEL32.dll
+ 0001:0001c262       _GetModuleFileNameA@12     0041d262 f   kernel32:KERNEL32.dll
+ 0001:0001c268       _GetLastError@0            0041d268 f   kernel32:KERNEL32.dll
+ 0001:0001c26e       _SetHandleCount@4          0041d26e f   kernel32:KERNEL32.dll
+ 0001:0001c274       _GetFileType@4             0041d274 f   kernel32:KERNEL32.dll
+ 0001:0001c27a       _TerminateProcess@8        0041d27a f   kernel32:KERNEL32.dll
+ 0001:0001c280       _GetCurrentProcess@0       0041d280 f   kernel32:KERNEL32.dll
+ 0001:0001c286       _UnhandledExceptionFilter@4 0041d286 f   kernel32:KERNEL32.dll
+ 0001:0001c28c       _FreeEnvironmentStringsA@4 0041d28c f   kernel32:KERNEL32.dll
+ 0001:0001c292       _FreeEnvironmentStringsW@4 0041d292 f   kernel32:KERNEL32.dll
+ 0001:0001c298       _WideCharToMultiByte@32    0041d298 f   kernel32:KERNEL32.dll
+ 0001:0001c29e       _GetEnvironmentStrings@0   0041d29e f   kernel32:KERNEL32.dll
+ 0001:0001c2a4       _GetEnvironmentStringsW@0  0041d2a4 f   kernel32:KERNEL32.dll
+ 0001:0001c2aa       _HeapDestroy@4             0041d2aa f   kernel32:KERNEL32.dll
+ 0001:0001c2b0       _HeapCreate@12             0041d2b0 f   kernel32:KERNEL32.dll
+ 0001:0001c2b6       _HeapFree@12               0041d2b6 f   kernel32:KERNEL32.dll
+ 0001:0001c2bc       _VirtualFree@12            0041d2bc f   kernel32:KERNEL32.dll
+ 0001:0001c2c2       _RtlUnwind@16              0041d2c2 f   kernel32:KERNEL32.dll
+ 0001:0001c2c8       _HeapAlloc@12              0041d2c8 f   kernel32:KERNEL32.dll
+ 0001:0001c2ce       _HeapReAlloc@16            0041d2ce f   kernel32:KERNEL32.dll
+ 0001:0001c2d4       _VirtualAlloc@16           0041d2d4 f   kernel32:KERNEL32.dll
+ 0001:0001c2da       _SetConsoleCtrlHandler@8   0041d2da f   kernel32:KERNEL32.dll
+ 0001:0001c2e0       _SetStdHandle@8            0041d2e0 f   kernel32:KERNEL32.dll
+ 0001:0001c2e6       _FlushFileBuffers@4        0041d2e6 f   kernel32:KERNEL32.dll
+ 0001:0001c2ec       _GetCPInfo@8               0041d2ec f   kernel32:KERNEL32.dll
+ 0001:0001c2f2       _GetACP@0                  0041d2f2 f   kernel32:KERNEL32.dll
+ 0001:0001c2f8       _GetOEMCP@0                0041d2f8 f   kernel32:KERNEL32.dll
+ 0001:0001c2fe       _MultiByteToWideChar@24    0041d2fe f   kernel32:KERNEL32.dll
+ 0001:0001c304       _GetStringTypeA@20         0041d304 f   kernel32:KERNEL32.dll
+ 0001:0001c30a       _GetStringTypeW@16         0041d30a f   kernel32:KERNEL32.dll
+ 0001:0001c310       _SetEndOfFile@4            0041d310 f   kernel32:KERNEL32.dll
+ 0001:0001c316       _LCMapStringA@24           0041d316 f   kernel32:KERNEL32.dll
+ 0001:0001c31c       _LCMapStringW@24           0041d31c f   kernel32:KERNEL32.dll
+ 0001:0001c322       _RaiseException@16         0041d322 f   kernel32:KERNEL32.dll
+ 0001:0001c328       _wsprintfA                 0041d328 f   user32:USER32.dll
+ 0001:0001c32e       _GetFocus@0                0041d32e f   user32:USER32.dll
+ 0001:0001c334       _DispatchMessageA@4        0041d334 f   user32:USER32.dll
+ 0001:0001c33a       _GetMessageA@16            0041d33a f   user32:USER32.dll
+ 0001:0001c340       _TranslateMessage@4        0041d340 f   user32:USER32.dll
+ 0001:0001c346       _PeekMessageA@20           0041d346 f   user32:USER32.dll
+ 0001:0001c34c       _GetClientRect@8           0041d34c f   user32:USER32.dll
+ 0001:0001c352       _GetSystemMetrics@4        0041d352 f   user32:USER32.dll
+ 0001:0001c358       _GetWindowRect@8           0041d358 f   user32:USER32.dll
+ 0001:0001c35e       _CreateWindowExW@48        0041d35e f   user32:USER32.dll
+ 0001:0001c364       _AdjustWindowRect@12       0041d364 f   user32:USER32.dll
+ 0001:0001c36a       _RegisterClassW@4          0041d36a f   user32:USER32.dll
+ 0001:0001c370       _GetCursorPos@4            0041d370 f   user32:USER32.dll
+ 0001:0001c376       _SetCapture@4              0041d376 f   user32:USER32.dll
+ 0001:0001c37c       _ReleaseCapture@0          0041d37c f   user32:USER32.dll
+ 0001:0001c382       _GetKeyState@4             0041d382 f   user32:USER32.dll
+ 0001:0001c388       _DestroyWindow@4           0041d388 f   user32:USER32.dll
+ 0001:0001c38e       _PostMessageA@16           0041d38e f   user32:USER32.dll
+ 0001:0001c394       _SetSysColors@12           0041d394 f   user32:USER32.dll
+ 0001:0001c39a       _GetSysColor@4             0041d39a f   user32:USER32.dll
+ 0001:0001c3a0       _InvalidateRect@12         0041d3a0 f   user32:USER32.dll
+ 0001:0001c3a6       _DeleteObject@4            0041d3a6 f   gdi32:GDI32.dll
+ 0001:0001c3ac       _DeleteDC@4                0041d3ac f   gdi32:GDI32.dll
+ 0001:0001c3b2       _GdiFlush@0                0041d3b2 f   gdi32:GDI32.dll
+ 0001:0001c3b8       _SetDIBits@28              0041d3b8 f   gdi32:GDI32.dll
+ 0001:0001c3be       _CreateDIBSection@24       0041d3be f   gdi32:GDI32.dll
+ 0001:0001c3c4       _CreateCompatibleDC@4      0041d3c4 f   gdi32:GDI32.dll
+ 0001:0001c3ca       _SetPaletteEntries@16      0041d3ca f   gdi32:GDI32.dll
+ 0001:0001c3d0       _GetPaletteEntries@16      0041d3d0 f   gdi32:GDI32.dll
+ 0001:0001c3d6       _SwapBuffers@4             0041d3d6 f   gdi32:GDI32.dll
+ 0001:0001c3dc       _RealizePalette@4          0041d3dc f   gdi32:GDI32.dll
+ 0001:0001c3e2       _SelectPalette@12          0041d3e2 f   gdi32:GDI32.dll
+ 0001:0001c3e8       _SetSystemPaletteUse@8     0041d3e8 f   gdi32:GDI32.dll
+ 0001:0001c3ee       _CreatePalette@4           0041d3ee f   gdi32:GDI32.dll
+ 0001:0001c3f4       _DescribePixelFormat@16    0041d3f4 f   gdi32:GDI32.dll
+ 0001:0001c3fa       _UnrealizeObject@4         0041d3fa f   gdi32:GDI32.dll
+ 0001:0001c400       _GetPixelFormat@4          0041d400 f   gdi32:GDI32.dll
+ 0001:0001c406       _RegCloseKey@4             0041d406 f   advapi32:ADVAPI32.dll
+ 0001:0001c40c       _RegQueryValueExA@24       0041d40c f   advapi32:ADVAPI32.dll
+ 0001:0001c412       _RegOpenKeyExA@20          0041d412 f   advapi32:ADVAPI32.dll
+ 0002:0000001c       ??_C@_0CJ@LIAG@Unable?5to?5find?5a?5required?5object@ 0041e01c     import_3ds.obj
+ 0002:00000048       ??_C@_0CC@GEJB@IG_3DS_LoadObject?5critical?5fault@ 0041e048     import_3ds.obj
+ 0002:0000006c       ??_C@_01LHO@r?$AA@         0041e06c     import_3ds.obj
+ 0002:00000070       ??_C@_0CJ@IAI@Unable?5to?5find?5the?5specified?5obj@ 0041e070     Import_Geo.obj
+ 0002:0000009c       ??_C@_0BI@FNHO@IG_3DS_LoadObject?5fault?$AA@ 0041e09c     Import_Geo.obj
+ 0002:000000b4       ??_C@_02JKAF@rb?$AA@       0041e0b4     Import_Geo.obj
+ 0002:000000b8       ??_C@_0CI@IJOJ@specified?5file?5not?5found?5in?5sear@ 0041e0b8     md2Loader.obj
+ 0002:000000e0       ??_C@_0BF@GOAL@MD2_LoadObject?5fault?$AA@ 0041e0e0     md2Loader.obj
+ 0002:000000f8       ??_C@_0CE@GPEJ@Unable?5to?5create?5the?5specified?5f@ 0041e0f8     text.obj
+ 0002:0000011c       ??_C@_0BI@HPBH@Txt_wglCreateFont?5fault?$AA@ 0041e11c     text.obj
+ 0002:00000134       __real@4@00000000000000000000 0041e134     plane.obj
+ 0002:00000138       ??_C@_0CH@LICE@Unable?5to?5acquire?5GUID_SysMouse?5@ 0041e138     DXWrapper.obj
+ 0002:00000160       ??_C@_0CK@LELF@Unable?5to?5accuire?5GUID_SysKeyboa@ 0041e160     DXWrapper.obj
+ 0002:0000018c       ??_C@_0BD@KIAG@DX_InitInput?5fault?$AA@ 0041e18c     DXWrapper.obj
+ 0002:000001a0       ??_C@_0DD@JCOF@Unable?5to?5create?5LPDIRECTINPUTDE@ 0041e1a0     DXWrapper.obj
+ 0002:000001d4       ??_C@_0DG@GBGN@unable?5to?5create?5LPDIRECTINPUTDE@ 0041e1d4     DXWrapper.obj
+ 0002:0000020c       ??_C@_0BI@JFBI@DX_InitInterfaces?5fault?$AA@ 0041e20c     DXWrapper.obj
+ 0002:00000224       ??_C@_0CH@EKOF@Unable?5to?5create?5DirectInput?5int@ 0041e224     DXWrapper.obj
+ 0002:0000024c       ??_C@_0BL@NCHI@DX_comCreateInteface?5fault?$AA@ 0041e24c     DXWrapper.obj
+ 0002:00000268       ??_C@_0CA@OIBD@Unable?5to?5poll?5GUID_SysKeyboard?$AA@ 0041e268     DXWrapper.obj
+ 0002:00000288       ??_C@_0CI@CGIF@DX_GetDeviceStates?5fault?5?$DL?5non?9t@ 0041e288     DXWrapper.obj
+ 0002:000002b0       ??_C@_0CA@PJIF@error?5invoked?5by?5wglMakeCurrent?$AA@ 0041e2b0     OpenGL.obj
+ 0002:000002d0       ??_C@_0O@PLOB@SYS_OGL_Error?$AA@ 0041e2d0     OpenGL.obj
+ 0002:000002e0       ??_C@_0CL@PFKM@Unable?5to?5create?5OpenGL?5renderin@ 0041e2e0     OpenGL.obj
+ 0002:0000030c       ??_C@_0CE@EEDH@Unable?5to?5set?5required?5pixel?5for@ 0041e30c     OpenGL.obj
+ 0002:00000330       ??_C@_0CH@FFE@Unable?5to?5choose?5required?5pixel?5@ 0041e330     OpenGL.obj
+ 0002:00000358       ??_C@_0BN@DIMI@SYS_OGL_CreateContext?5fault?4?$AA@ 0041e358     OpenGL.obj
+ 0002:00000378       ??_C@_0CH@DEPI@Unable?5to?5create?5Win32?5device?5co@ 0041e378     OpenGL.obj
+ 0002:000003a0       ??_C@_0DN@FCNB@Gee?5whiz?4?4?4?5Perhaps?5you?5should?5i@ 0041e3a0     OpenGL.obj
+ 0002:000003e0       ??_C@_0BH@IDEF@Your?5computer?5sucks?$CB?$CB?$CB?$AA@ 0041e3e0     OpenGL.obj
+ 0002:000003f8       ??_C@_0FO@DPIJ@The?5Requested?5Fullscreen?5Mode?5Is@ 0041e3f8     OpenGL.obj
+ 0002:00000458       ??_C@_0BM@OCEK@SYS_OGL_CreateContext?5fault?$AA@ 0041e458     OpenGL.obj
+ 0002:00000474       ??_C@_0CG@PAAL@Kaos?5Demo?5engine?5?$CI?5v?50?40?40?5?$CJ?5tes@ 0041e474     Win32.obj
+ 0002:0000049c       ??_C@_0CL@NIDO@Kaos?5Demo?5Engine?5?$CIv0?40?40?$CJ?5Test?5A@ 0041e49c     Win32.obj
+ 0002:000004c8       __real@4@3ffec000000000000000 0041e4c8     bsp_comp.obj
+ 0002:000004cc       __real@4@3ffef333330000000000 0041e4cc     bsp_comp.obj
+ 0002:000004d0       ??_C@_0CG@JGOM@Unable?5to?5load?5specified?5texture@ 0041e4d0     texture.obj
+ 0002:000004f8       ??_C@_0BH@PIHB@R_Tx_LoadTexture?5fault?$AA@ 0041e4f8     texture.obj
+ 0002:00000510       ??_C@_0CN@EDBF@Unable?5to?5find?5specified?5file?5in@ 0041e510     pcx.obj
+ 0002:00000540       ??_C@_0BK@HKBF@BTMP_PCX_LoadHeader?5fault?$AA@ 0041e540     pcx.obj
+ 0002:0000055c       ??_C@_0BC@BPNB@Invalid?5rgb?5file?4?$AA@ 0041e55c     glaux:tkimage.obj
+ 0002:00000570       ??_C@_0BP@JMPO@Failed?5to?5open?5image?5file?5?$CFs?4?6?$AA@ 0041e570     glaux:tkimage.obj
+ 0002:00000590       ??_C@_0CA@LJID@Failed?5to?5open?5image?5file?5?$CFws?4?6?$AA@ 0041e590     glaux:tkimage.obj
+ 0002:000005b0       ??_C@_0P@PBOH@Out?5of?5memory?4?$AA@ 0041e5b0     glaux:tkimage.obj
+ 0002:000005c0       ??_C@_05CKBG@Error?$AA@    0041e5c0     glaux:tkimage.obj
+ 0002:000005c8       ??_C@_0BN@HJBO@Failed?5to?5open?5DIB?5file?5?$CFs?4?6?$AA@ 0041e5c8     glaux:tkdib.obj
+ 0002:000005e8       ??_C@_0BO@DBGG@Failed?5to?5open?5DIB?5file?5?$CFws?4?6?$AA@ 0041e5e8     glaux:tkdib.obj
+ 0002:00000608       ??_C@_0BN@JEEA@Image?5file?5conversion?5error?4?$AA@ 0041e608     glaux:tkdib.obj
+ 0002:00000628       ??_C@_0BJ@PFHE@Unknown?5DIB?5file?5format?4?$AA@ 0041e628     glaux:tkdib.obj
+ 0002:00000644       ??_C@_1BI@DJNL@?$AAt?$AAk?$AAL?$AAi?$AAb?$AAW?$AAC?$AAl?$AAa?$AAs?$AAs?$AA?$AA@ 0041e644     glaux:tk.obj
+ 0002:0000065c       ??_C@_0M@NKJK@tkLibWClass?$AA@ 0041e65c     glaux:tk.obj
+ 0002:00000668       ??_C@_0L@GDPD@InfoWindow?$AA@ 0041e668     glaux:tk.obj
+ 0002:00000674       ??_C@_08DGMJ@InfoText?$AA@ 0041e674     glaux:tk.obj
+ 0002:00000680       ??_C@_0M@JAFJ@ButtonLight?$AA@ 0041e680     glaux:tk.obj
+ 0002:0000068c       ??_C@_0P@MMGE@ButtonDkShadow?$AA@ 0041e68c     glaux:tk.obj
+ 0002:0000069c       ??_C@_0O@HHEJ@ButtonHilight?$AA@ 0041e69c     glaux:tk.obj
+ 0002:000006ac       ??_C@_0BC@OJGL@InactiveTitleText?$AA@ 0041e6ac     glaux:tk.obj
+ 0002:000006c0       ??_C@_0L@BLLI@ButtonText?$AA@ 0041e6c0     glaux:tk.obj
+ 0002:000006cc       ??_C@_08MKBB@GrayText?$AA@ 0041e6cc     glaux:tk.obj
+ 0002:000006d8       ??_C@_0N@KBGC@ButtonShadow?$AA@ 0041e6d8     glaux:tk.obj
+ 0002:000006e8       ??_C@_0L@KLIC@ButtonFace?$AA@ 0041e6e8     glaux:tk.obj
+ 0002:000006f4       ??_C@_0M@JEBI@HilightText?$AA@ 0041e6f4     glaux:tk.obj
+ 0002:00000700       ??_C@_07PJM@Hilight?$AA@   0041e700     glaux:tk.obj
+ 0002:00000708       ??_C@_0N@JJBA@AppWorkspace?$AA@ 0041e708     glaux:tk.obj
+ 0002:00000718       ??_C@_0P@KNNL@InactiveBorder?$AA@ 0041e718     glaux:tk.obj
+ 0002:00000728       ??_C@_0N@LMMP@ActiveBorder?$AA@ 0041e728     glaux:tk.obj
+ 0002:00000738       ??_C@_09ILEP@TitleText?$AA@ 0041e738     glaux:tk.obj
+ 0002:00000744       ??_C@_0L@HBHE@WindowText?$AA@ 0041e744     glaux:tk.obj
+ 0002:00000750       ??_C@_08PPFE@MenuText?$AA@ 0041e750     glaux:tk.obj
+ 0002:0000075c       ??_C@_0M@GFIE@WindowFrame?$AA@ 0041e75c     glaux:tk.obj
+ 0002:00000768       ??_C@_06FCEH@Window?$AA@   0041e768     glaux:tk.obj
+ 0002:00000770       ??_C@_04PAPL@Menu?$AA@     0041e770     glaux:tk.obj
+ 0002:00000778       ??_C@_0O@OBNA@InactiveTitle?$AA@ 0041e778     glaux:tk.obj
+ 0002:00000788       ??_C@_0M@PFIJ@ActiveTitle?$AA@ 0041e788     glaux:tk.obj
+ 0002:00000794       ??_C@_0L@BJIH@Background?$AA@ 0041e794     glaux:tk.obj
+ 0002:000007a0       ??_C@_09LALL@Scrollbar?$AA@ 0041e7a0     glaux:tk.obj
+ 0002:000007ac       ??_C@_0BG@EIMN@create?5window?5failed?6?$AA@ 0041e7ac     glaux:tk.obj
+ 0002:000007c4       ??_C@_0CJ@NANK@Could?5not?5get?5an?5HDC?5for?5window?5@ 0041e7c4     glaux:tk.obj
+ 0002:000007f0       ??_C@_0BJ@FFEC@wglCreateContext?5Failed?6?$AA@ 0041e7f0     glaux:tk.obj
+ 0002:0000080c       ??_C@_0BH@IEPA@wglMakeCurrent?5Failed?6?$AA@ 0041e80c     glaux:tk.obj
+ 0002:00000824       ??_C@_0CB@BFHH@Failed?5to?5register?5window?5class?6@ 0041e824     glaux:tk.obj
+ 0002:00000860       ??_C@_0M@FMEK@?$CFld?5?$CFld?5?$CFld?$AA@ 0041e860     glaux:tk.obj
+ 0002:0000086c       ??_C@_0BF@OHCA@Control?5Panel?2Colors?$AA@ 0041e86c     glaux:tk.obj
+ 0002:00000884       ??_C@_0CB@PGDC@Selecting?5a?5pixel?5format?5failed?6@ 0041e884     glaux:tk.obj
+ 0002:000008a8       ??_C@_0BH@GHBP@SetPixelFormat?5failed?6?$AA@ 0041e8a8     glaux:tk.obj
+ 0002:000008c0       ??_C@_0CL@LDIC@Could?5not?5get?5pixel?5format?5for?5D@ 0041e8c0     glaux:tk.obj
+ 0002:000008ec       ??_C@_0DA@FMJB@Could?5not?5get?5a?5description?5of?5p@ 0041e8ec     glaux:tk.obj
+ 0002:00000920       _c_dfDIMouse               0041e920     dinput:dilib1.obj
+ 0002:00000938       _c_dfDIKeyboard            0041e938     dinput:dilib2.obj
+ 0002:00000950       _GUID_SysMouse             0041e950     dxguid:guid133.obj
+ 0002:00000960       _GUID_SysKeyboard          0041e960     dxguid:guid134.obj
+ 0002:00000970       _GUID_ZAxis                0041e970     dxguid:guid124.obj
+ 0002:00000980       _GUID_YAxis                0041e980     dxguid:guid123.obj
+ 0002:00000990       _GUID_XAxis                0041e990     dxguid:guid122.obj
+ 0002:000009a0       _GUID_Key                  0041e9a0     dxguid:guid130.obj
+ 0002:000009b0       ??_C@_0O@FHMD@i386?2chkesp?4c?$AA@ 0041e9b0     LIBCD:chkesp.obj
+ 0002:000009c0       ??_C@_00A@?$AA@            0041e9c0     LIBCD:chkesp.obj
+ 0002:000009c4       ??_C@_0NM@ELEE@The?5value?5of?5ESP?5was?5not?5properl@ 0041e9c4     LIBCD:chkesp.obj
+ 0002:00000aa0       ??_C@_08PHBD@fclose?4c?$AA@ 0041eaa0     LIBCD:fclose.obj
+ 0002:00000aac       ??_C@_0M@KJPK@str?5?$CB?$DN?5NULL?$AA@ 0041eaac     LIBCD:fclose.obj
+ 0002:00000ab8       ??_C@_0BC@IPFL@?$CKmode?5?$CB?$DN?5_T?$CI?8?20?8?$CJ?$AA@ 0041eab8     LIBCD:fopen.obj
+ 0002:00000acc       ??_C@_0N@BKPP@mode?5?$CB?$DN?5NULL?$AA@ 0041eacc     LIBCD:fopen.obj
+ 0002:00000adc       ??_C@_0BC@GOED@?$CKfile?5?$CB?$DN?5_T?$CI?8?20?8?$CJ?$AA@ 0041eadc     LIBCD:fopen.obj
+ 0002:00000af0       ??_C@_07OMGG@fopen?4c?$AA@ 0041eaf0     LIBCD:fopen.obj
+ 0002:00000af8       ??_C@_0N@MCKG@file?5?$CB?$DN?5NULL?$AA@ 0041eaf8     LIBCD:fopen.obj
+ 0002:00000b08       ??_C@_08KGLM@rewind?4c?$AA@ 0041eb08     LIBCD:rewind.obj
+ 0002:00000b14       ??_C@_07HFEM@fseek?4c?$AA@ 0041eb14     LIBCD:fseek.obj
+ 0002:00000b1c       ??_C@_07CMIP@ftell?4c?$AA@ 0041eb1c     LIBCD:ftell.obj
+ 0002:00000b24       ??_C@_0P@LNLA@format?5?$CB?$DN?5NULL?$AA@ 0041eb24     LIBCD:vsprintf.obj
+ 0002:00000b34       ??_C@_0L@HE@vsprintf?4c?$AA@ 0041eb34     LIBCD:vsprintf.obj
+ 0002:00000b40       ??_C@_0P@OOIN@string?5?$CB?$DN?5NULL?$AA@ 0041eb40     LIBCD:vsprintf.obj
+ 0002:00000b50       ??_C@_07JJAI@fgetc?4c?$AA@ 0041eb50     LIBCD:fgetc.obj
+ 0002:00000b58       ??_C@_0P@FHEA@stream?5?$CB?$DN?5NULL?$AA@ 0041eb58     LIBCD:fgetc.obj
+ 0002:00000b68       ??_C@_0L@OFGA@dbgdel?4cpp?$AA@ 0041eb68     LIBCD:dbgdel.obj
+ 0002:00000b74       ??_C@_0CH@PHOC@_BLOCK_TYPE_IS_VALID?$CIpHead?9?$DOnBlo@ 0041eb74     LIBCD:dbgdel.obj
+ 0002:00000bac       ??_C@_06DPMO@Client?$AA@   0041ebac     LIBCD:dbgheap.obj
+ 0002:00000bb4       ??_C@_06BAFM@Ignore?$AA@   0041ebb4     LIBCD:dbgheap.obj
+ 0002:00000bbc       ??_C@_03DICE@CRT?$AA@      0041ebbc     LIBCD:dbgheap.obj
+ 0002:00000bc0       ??_C@_06BILL@Normal?$AA@   0041ebc0     LIBCD:dbgheap.obj
+ 0002:00000bc8       ??_C@_04NEN@Free?$AA@      0041ebc8     LIBCD:dbgheap.obj
+ 0002:00000bd0       ??_C@_0DC@CGID@Error?3?5memory?5allocation?3?5bad?5me@ 0041ebd0     LIBCD:dbgheap.obj
+ 0002:00000c04       ??_C@_0CE@FMIA@Invalid?5allocation?5size?3?5?$CFu?5byte@ 0041ec04     LIBCD:dbgheap.obj
+ 0002:00000c28       ??_C@_02DILL@?$CFs?$AA@    0041ec28     LIBCD:dbgheap.obj
+ 0002:00000c2c       ??_C@_0CB@CPBI@Client?5hook?5allocation?5failure?4?6@ 0041ec2c     LIBCD:dbgheap.obj
+ 0002:00000c50       ??_C@_0DF@DKHF@Client?5hook?5allocation?5failure?5a@ 0041ec50     LIBCD:dbgheap.obj
+ 0002:00000c88       ??_C@_09IMJC@dbgheap?4c?$AA@ 0041ec88     LIBCD:dbgheap.obj
+ 0002:00000c94       ??_C@_0BC@EPKL@_CrtCheckMemory?$CI?$CJ?$AA@ 0041ec94     LIBCD:dbgheap.obj
+ 0002:00000ca8       ??_C@_0BK@JDHA@_pFirstBlock?5?$DN?$DN?5pOldBlock?$AA@ 0041eca8     LIBCD:dbgheap.obj
+ 0002:00000cc4       ??_C@_0BJ@NMEF@_pLastBlock?5?$DN?$DN?5pOldBlock?$AA@ 0041ecc4     LIBCD:dbgheap.obj
+ 0002:00000ce0       ??_C@_0DC@BOCN@fRealloc?5?$HM?$HM?5?$CI?$CBfRealloc?5?$CG?$CG?5pNewBl@ 0041ece0     LIBCD:dbgheap.obj
+ 0002:00000d14       ??_C@_0DK@DKOM@_BLOCK_TYPE?$CIpOldBlock?9?$DOnBlockUse@ 0041ed14     LIBCD:dbgheap.obj
+ 0002:00000d50       ??_C@_0EF@EDKM@pOldBlock?9?$DOnLine?5?$DN?$DN?5IGNORE_LINE?5@ 0041ed50     LIBCD:dbgheap.obj
+ 0002:00000d98       ??_C@_0CC@GPMO@_CrtIsValidHeapPointer?$CIpUserData@ 0041ed98     LIBCD:dbgheap.obj
+ 0002:00000dbc       ??_C@_0CN@FHGE@Allocation?5too?5large?5or?5negative@ 0041edbc     LIBCD:dbgheap.obj
+ 0002:00000dec       ??_C@_0CE@EAMN@Client?5hook?5re?9allocation?5failur@ 0041edec     LIBCD:dbgheap.obj
+ 0002:00000e10       ??_C@_0DI@KKMM@Client?5hook?5re?9allocation?5failur@ 0041ee10     LIBCD:dbgheap.obj
+ 0002:00000e48       ??_C@_0BG@JCEC@_pFirstBlock?5?$DN?$DN?5pHead?$AA@ 0041ee48     LIBCD:dbgheap.obj
+ 0002:00000e60       ??_C@_0BF@NLNN@_pLastBlock?5?$DN?$DN?5pHead?$AA@ 0041ee60     LIBCD:dbgheap.obj
+ 0002:00000e78       ??_C@_0BO@PLHH@pHead?9?$DOnBlockUse?5?$DN?$DN?5nBlockUse?$AA@ 0041ee78     LIBCD:dbgheap.obj
+ 0002:00000e98       ??_C@_0DN@KKIO@pHead?9?$DOnLine?5?$DN?$DN?5IGNORE_LINE?5?$CG?$CG?5p@ 0041ee98     LIBCD:dbgheap.obj
+ 0002:00000ed8       ??_C@_0CK@OJNB@DAMAGE?3?5after?5?$CFhs?5block?5?$CI?$CD?$CFd?$CJ?5at@ 0041eed8     LIBCD:dbgheap.obj
+ 0002:00000f04       ??_C@_0CL@IJIL@DAMAGE?3?5before?5?$CFhs?5block?5?$CI?$CD?$CFd?$CJ?5a@ 0041ef04     LIBCD:dbgheap.obj
+ 0002:00000f30       ??_C@_0BL@MBNA@Client?5hook?5free?5failure?4?6?$AA@ 0041ef30     LIBCD:dbgheap.obj
+ 0002:00000f4c       ??_C@_0DK@EKKL@memory?5check?5error?5at?50x?$CF08X?5?$DN?50@ 0041ef4c     LIBCD:dbgheap.obj
+ 0002:00000f88       ??_C@_0CJ@GCII@?$CFhs?5located?5at?50x?$CF08X?5is?5?$CFu?5byte@ 0041ef88     LIBCD:dbgheap.obj
+ 0002:00000fb4       ??_C@_0CA@EJPI@?$CFhs?5allocated?5at?5file?5?$CFhs?$CI?$CFd?$CJ?4?6?$AA@ 0041efb4     LIBCD:dbgheap.obj
+ 0002:00000fd4       ??_C@_0CJ@LHHG@DAMAGE?3?5on?5top?5of?5Free?5block?5at?5@ 0041efd4     LIBCD:dbgheap.obj
+ 0002:00001000       ??_C@_07GJHM@DAMAGED?$AA@  0041f000     LIBCD:dbgheap.obj
+ 0002:00001008       ??_C@_0CL@ODIE@_heapchk?5fails?5with?5unknown?5retu@ 0041f008     LIBCD:dbgheap.obj
+ 0002:00001034       ??_C@_0CC@EHNC@_heapchk?5fails?5with?5_HEAPBADPTR?4@ 0041f034     LIBCD:dbgheap.obj
+ 0002:00001058       ??_C@_0CC@JNDP@_heapchk?5fails?5with?5_HEAPBADEND?4@ 0041f058     LIBCD:dbgheap.obj
+ 0002:0000107c       ??_C@_0CD@DNMG@_heapchk?5fails?5with?5_HEAPBADNODE@ 0041f07c     LIBCD:dbgheap.obj
+ 0002:000010a0       ??_C@_0CE@JMCB@_heapchk?5fails?5with?5_HEAPBADBEGI@ 0041f0a0     LIBCD:dbgheap.obj
+ 0002:000010c4       ??_C@_0CD@MEMI@Bad?5memory?5block?5found?5at?50x?$CF08X@ 0041f0c4     LIBCD:dbgheap.obj
+ 0002:000010e8       ??_C@_0CI@GMAO@_CrtMemCheckPoint?3?5NULL?5state?5po@ 0041f0e8     LIBCD:dbgheap.obj
+ 0002:00001110       ??_C@_0CI@MNAE@_CrtMemDifference?3?5NULL?5state?5po@ 0041f110     LIBCD:dbgheap.obj
+ 0002:00001138       ??_C@_0BH@PKIJ@Object?5dump?5complete?4?6?$AA@ 0041f138     LIBCD:dbgheap.obj
+ 0002:00001150       ??_C@_0DB@DBPF@crt?5block?5at?50x?$CF08X?0?5subtype?5?$CFx?0@ 0041f150     LIBCD:dbgheap.obj
+ 0002:00001184       ??_C@_0CI@JLM@normal?5block?5at?50x?$CF08X?0?5?$CFu?5bytes@ 0041f184     LIBCD:dbgheap.obj
+ 0002:000011ac       ??_C@_0DE@PFEA@client?5block?5at?50x?$CF08X?0?5subtype?5@ 0041f1ac     LIBCD:dbgheap.obj
+ 0002:000011e0       ??_C@_06MBCE@?$HL?$CFld?$HN?5?$AA@ 0041f1e0     LIBCD:dbgheap.obj
+ 0002:000011e8       ??_C@_0L@BLDJ@?$CFhs?$CI?$CFd?$CJ?5?3?5?$AA@ 0041f1e8     LIBCD:dbgheap.obj
+ 0002:000011f4       ??_C@_0BE@FEMA@?$CDFile?5Error?$CD?$CI?$CFd?$CJ?5?3?5?$AA@ 0041f1f4     LIBCD:dbgheap.obj
+ 0002:00001208       ??_C@_0BE@FPPM@Dumping?5objects?5?9?$DO?6?$AA@ 0041f208     LIBCD:dbgheap.obj
+ 0002:0000121c       ??_C@_0BA@POLM@?5Data?3?5?$DM?$CFs?$DO?5?$CFs?6?$AA@ 0041f21c     LIBCD:dbgheap.obj
+ 0002:0000122c       ??_C@_05JLAO@?$CF?42X?5?$AA@ 0041f22c     LIBCD:dbgheap.obj
+ 0002:00001234       ??_C@_0BI@KONA@Detected?5memory?5leaks?$CB?6?$AA@ 0041f234     LIBCD:dbgheap.obj
+ 0002:0000124c       ??_C@_0BP@LCCN@Total?5allocations?3?5?$CFld?5bytes?4?6?$AA@ 0041f24c     LIBCD:dbgheap.obj
+ 0002:0000126c       ??_C@_0CB@COID@Largest?5number?5used?3?5?$CFld?5bytes?4?6@ 0041f26c     LIBCD:dbgheap.obj
+ 0002:00001290       ??_C@_0BO@MEJD@?$CFld?5bytes?5in?5?$CFld?5?$CFhs?5Blocks?4?6?$AA@ 0041f290     LIBCD:dbgheap.obj
+ 0002:000012b0       ??_C@_08EJDA@sscanf?4c?$AA@ 0041f2b0     LIBCD:sscanf.obj
+ 0002:000012bc       ??_C@_0BB@BLL@Assertion?5Failed?$AA@ 0041f2bc     LIBCD:dbgrpt.obj
+ 0002:000012d0       ??_C@_07JCGI@Warning?$AA@  0041f2d0     LIBCD:dbgrpt.obj
+ 0002:000012d8       ??_C@_0M@ODEP@?$CFs?$CI?$CFd?$CJ?5?3?5?$CFs?$AA@ 0041f2d8     LIBCD:dbgrpt.obj
+ 0002:000012e4       ??_C@_01BJG@?6?$AA@        0041f2e4     LIBCD:dbgrpt.obj
+ 0002:000012e8       ??_C@_01FEHD@?$AN?$AA@     0041f2e8     LIBCD:dbgrpt.obj
+ 0002:000012ec       ??_C@_0BC@OIMC@Assertion?5failed?$CB?$AA@ 0041f2ec     LIBCD:dbgrpt.obj
+ 0002:00001300       ??_C@_0BD@BEAK@Assertion?5failed?3?5?$AA@ 0041f300     LIBCD:dbgrpt.obj
+ 0002:00001314       ??_C@_0CL@LCCP@_CrtDbgReport?3?5String?5too?5long?5o@ 0041f314     LIBCD:dbgrpt.obj
+ 0002:00001340       ??_C@_0DC@EMDK@Second?5Chance?5Assertion?5Failed?3?5@ 0041f340     LIBCD:dbgrpt.obj
+ 0002:00001374       ??_C@_09NJAK@wsprintfA?$AA@ 0041f374     LIBCD:dbgrpt.obj
+ 0002:00001380       ??_C@_0L@HKL@user32?4dll?$AA@ 0041f380     LIBCD:dbgrpt.obj
+ 0002:0000138c       ??_C@_0CD@GCMD@Microsoft?5Visual?5C?$CL?$CL?5Debug?5Libra@ 0041f38c     LIBCD:dbgrpt.obj
+ 0002:000013b0       ??_C@_0FD@EBDD@Debug?5?$CFs?$CB?6?6Program?3?5?$CFs?$CFs?$CFs?$CFs?$CFs?$CFs@ 0041f3b0     LIBCD:dbgrpt.obj
+ 0002:00001404       ??_C@_09DCKN@?6Module?3?5?$AA@ 0041f404     LIBCD:dbgrpt.obj
+ 0002:00001410       ??_C@_07HJII@?6File?3?5?$AA@ 0041f410     LIBCD:dbgrpt.obj
+ 0002:00001418       ??_C@_07LFGN@?6Line?3?5?$AA@ 0041f418     LIBCD:dbgrpt.obj
+ 0002:00001420       ??_C@_02JJJH@?6?6?$AA@     0041f420     LIBCD:dbgrpt.obj
+ 0002:00001424       ??_C@_0N@NOAB@Expression?3?5?$AA@ 0041f424     LIBCD:dbgrpt.obj
+ 0002:00001434       ??_C@_0HD@BHFH@?6?6For?5information?5on?5how?5your?5pr@ 0041f434     LIBCD:dbgrpt.obj
+ 0002:000014a8       ??_C@_03NAME@?4?4?4?$AA@   0041f4a8     LIBCD:dbgrpt.obj
+ 0002:000014ac       ??_C@_0BH@NNCD@?$DMprogram?5name?5unknown?$DO?$AA@ 0041f4ac     LIBCD:dbgrpt.obj
+ 0002:000014c4       ??_C@_08GFHP@dbgrpt?4c?$AA@ 0041f4c4     LIBCD:dbgrpt.obj
+ 0002:000014d0       ??_C@_0BG@FBEA@szUserMessage?5?$CB?$DN?5NULL?$AA@ 0041f4d0     LIBCD:dbgrpt.obj
+ 0002:000014e8       ??_C@_0L@JIE@_freebuf?4c?$AA@ 0041f4e8     LIBCD:_freebuf.obj
+ 0002:000014f4       ??_C@_07INLA@_open?4c?$AA@ 0041f4f4     LIBCD:_open.obj
+ 0002:000014fc       ??_C@_0BB@COCE@filename?5?$CB?$DN?5NULL?$AA@ 0041f4fc     LIBCD:_open.obj
+ 0002:00001510       ??_C@_08HJEP@stream?4c?$AA@ 0041f510     LIBCD:stream.obj
+ 0002:0000151c       ??_C@_08KFDJ@ioinit?4c?$AA@ 0041f51c     LIBCD:ioinit.obj
+ 0002:00001528       ??_C@_09DNOI@_filbuf?4c?$AA@ 0041f528     LIBCD:_filbuf.obj
+ 0002:00001538       __real@8@3fff8000000000000000 0041f538     LIBCD:testfdiv.obj
+ 0002:00001540       ??_C@_0BK@JEGK@IsProcessorFeaturePresent?$AA@ 0041f540     LIBCD:testfdiv.obj
+ 0002:0000155c       ??_C@_08OBID@KERNEL32?$AA@ 0041f55c     LIBCD:testfdiv.obj
+ 0002:00001568       __real@8@00000000000000000000 0041f568     LIBCD:cvt.obj
+ 0002:00001570       ??_C@_05OFLO@e?$CL000?$AA@ 0041f570     LIBCD:cvt.obj
+ 0002:00001578       ??_C@_0DP@IHIN@?$CI?$CCinconsistent?5IOB?5fields?$CC?0?5stre@ 0041f578     LIBCD:_flsbuf.obj
+ 0002:000015b8       ??_C@_09LGEI@_flsbuf?4c?$AA@ 0041f5b8     LIBCD:_flsbuf.obj
+ 0002:000015c4       ___lookuptable             0041f5c4     LIBCD:output.obj
+ 0002:00001620       ??_C@_1O@POHA@?$AA?$CI?$AAn?$AAu?$AAl?$AAl?$AA?$CJ?$AA?$AA@ 0041f620     LIBCD:output.obj
+ 0002:00001630       ??_C@_06ONKE@?$CInull?$CJ?$AA@ 0041f630     LIBCD:output.obj
+ 0002:00001638       ??_C@_08MIHI@output?4c?$AA@ 0041f638     LIBCD:output.obj
+ 0002:00001644       ??_C@_0P@PIHB@ch?5?$CB?$DN?5_T?$CI?8?20?8?$CJ?$AA@ 0041f644     LIBCD:output.obj
+ 0002:00001668       __DEFAULT_CW_in_mem        0041f668     LIBCD:common.obj
+ 0002:0000166a       __pi_by_2_to_61            0041f66a     LIBCD:common.obj
+ 0002:000016a4       ??_C@_09IGKD@stdenvp?4c?$AA@ 0041f6a4     LIBCD:stdenvp.obj
+ 0002:000016b0       ??_C@_09MPMN@stdargv?4c?$AA@ 0041f6b0     LIBCD:stdargv.obj
+ 0002:000016bc       ??_C@_07BNNE@a_env?4c?$AA@ 0041f6bc     LIBCD:a_env.obj
+ 0002:000016c4       ??_C@_0P@GGKG@runtime?5error?5?$AA@ 0041f6c4     LIBCD:crt0msg.obj
+ 0002:000016d4       ??_C@_02PIMC@?$AN?6?$AA@   0041f6d4     LIBCD:crt0msg.obj
+ 0002:000016d8       ??_C@_0O@DELO@TLOSS?5error?$AN?6?$AA@ 0041f6d8     LIBCD:crt0msg.obj
+ 0002:000016e8       ??_C@_0N@OMLL@SING?5error?$AN?6?$AA@ 0041f6e8     LIBCD:crt0msg.obj
+ 0002:000016f8       ??_C@_0P@OJAK@DOMAIN?5error?$AN?6?$AA@ 0041f6f8     LIBCD:crt0msg.obj
+ 0002:00001708       ??_C@_0CF@EANP@R6028?$AN?6?9?5unable?5to?5initialize?5he@ 0041f708     LIBCD:crt0msg.obj
+ 0002:00001730       ??_C@_0DF@ECGN@R6027?$AN?6?9?5not?5enough?5space?5for?5lo@ 0041f730     LIBCD:crt0msg.obj
+ 0002:00001768       ??_C@_0DF@FKAC@R6026?$AN?6?9?5not?5enough?5space?5for?5st@ 0041f768     LIBCD:crt0msg.obj
+ 0002:000017a0       ??_C@_0CG@DPMN@R6025?$AN?6?9?5pure?5virtual?5function?5c@ 0041f7a0     LIBCD:crt0msg.obj
+ 0002:000017c8       ??_C@_0DF@CKIP@R6024?$AN?6?9?5not?5enough?5space?5for?5_o@ 0041f7c8     LIBCD:crt0msg.obj
+ 0002:00001800       ??_C@_0CJ@GGOE@R6019?$AN?6?9?5unable?5to?5open?5console?5@ 0041f800     LIBCD:crt0msg.obj
+ 0002:0000182c       ??_C@_0CB@LBOB@R6018?$AN?6?9?5unexpected?5heap?5error?$AN?6@ 0041f82c     LIBCD:crt0msg.obj
+ 0002:00001850       ??_C@_0CN@FPEG@R6017?$AN?6?9?5unexpected?5multithread?5@ 0041f850     LIBCD:crt0msg.obj
+ 0002:00001880       ??_C@_0CM@OBIC@R6016?$AN?6?9?5not?5enough?5space?5for?5th@ 0041f880     LIBCD:crt0msg.obj
+ 0002:000018ac       ??_C@_0CB@HPAL@?$AN?6abnormal?5program?5termination?$AN?6@ 0041f8ac     LIBCD:crt0msg.obj
+ 0002:000018d0       ??_C@_0CM@JOOB@R6009?$AN?6?9?5not?5enough?5space?5for?5en@ 0041f8d0     LIBCD:crt0msg.obj
+ 0002:000018fc       ??_C@_0CK@OIBL@R6008?$AN?6?9?5not?5enough?5space?5for?5ar@ 0041f8fc     LIBCD:crt0msg.obj
+ 0002:00001928       ??_C@_0CF@LKPB@R6002?$AN?6?9?5floating?5point?5not?5load@ 0041f928     LIBCD:crt0msg.obj
+ 0002:00001950       ??_C@_0CF@JPDF@Microsoft?5Visual?5C?$CL?$CL?5Runtime?5Lib@ 0041f950     LIBCD:crt0msg.obj
+ 0002:00001978       ??_C@_0BK@DEOK@Runtime?5Error?$CB?6?6Program?3?5?$AA@ 0041f978     LIBCD:crt0msg.obj
+ 0002:00001994       ??_C@_09NEAG@sprintf?4c?$AA@ 0041f994     LIBCD:sprintf.obj
+ 0002:000019a0       ??_C@_07IEFA@input?4c?$AA@ 0041f9a0     LIBCD:input.obj
+ 0002:000019a8       ??_C@_0BD@NJFP@GetLastActivePopup?$AA@ 0041f9a8     LIBCD:crtmbox.obj
+ 0002:000019bc       ??_C@_0BA@GILI@GetActiveWindow?$AA@ 0041f9bc     LIBCD:crtmbox.obj
+ 0002:000019cc       ??_C@_0M@PKCK@MessageBoxA?$AA@ 0041f9cc     LIBCD:crtmbox.obj
+ 0002:000019d8       ??_C@_09LNLM@osfinfo?4c?$AA@ 0041f9d8     LIBCD:osfinfo.obj
+ 0002:000019e4       ??_C@_07HPAH@_file?4c?$AA@ 0041f9e4     LIBCD:_file.obj
+ 0002:000019ec       ??_C@_09EMDO@_getbuf?4c?$AA@ 0041f9ec     LIBCD:_getbuf.obj
+ 0002:000019f8       ??_C@_01A@?$AA?$AA@        0041f9f8     LIBCD:a_str.obj
+ 0002:000019fc       ??_C@_13A@?$AA?$AA?$AA?$AA@ 0041f9fc     LIBCD:a_str.obj
+ 0002:00001a0c       ??_C@_08MOLN@mbtowc?4c?$AA@ 0041fa0c     LIBCD:mbtowc.obj
+ 0002:00001a18       ??_C@_0CD@NPPL@MB_CUR_MAX?5?$DN?$DN?51?5?$HM?$HM?5MB_CUR_MAX?5?$DN?$DN@ 0041fa18     LIBCD:mbtowc.obj
+ 0002:00001a3c       ??_C@_08JKP@ungetc?4c?$AA@ 0041fa3c     LIBCD:ungetc.obj
+ 0002:00001a48       ??_C@_08EIOK@chsize?4c?$AA@ 0041fa48     LIBCD:chsize.obj
+ 0002:00001a54       ??_C@_09NPGF@size?5?$DO?$DN?50?$AA@ 0041fa54     LIBCD:chsize.obj
+ 0002:00001a78       ??_C@_06PAPI@1?$CDQNAN?$AA@ 0041fa78     LIBCD:x10fout.obj
+ 0002:00001a80       ??_C@_05BGNL@1?$CDINF?$AA@ 0041fa80     LIBCD:x10fout.obj
+ 0002:00001a88       ??_C@_05EDPF@1?$CDIND?$AA@ 0041fa88     LIBCD:x10fout.obj
+ 0002:00001a90       ??_C@_06LKFM@1?$CDSNAN?$AA@ 0041fa90     LIBCD:x10fout.obj
+ 0002:00001a98       ??_C@_03GAFO@_yn?$AA@      0041fa98     LIBCD:fpexcept.obj
+ 0002:00001a9c       ??_C@_03GNLD@_y1?$AA@      0041fa9c     LIBCD:fpexcept.obj
+ 0002:00001aa0       ??_C@_03MHCE@_y0?$AA@      0041faa0     LIBCD:fpexcept.obj
+ 0002:00001aa4       ??_C@_05PAK@frexp?$AA@     0041faa4     LIBCD:fpexcept.obj
+ 0002:00001aac       ??_C@_04JKCH@fmod?$AA@     0041faac     LIBCD:fpexcept.obj
+ 0002:00001ab4       ??_C@_06GGHF@_hypot?$AA@   0041fab4     LIBCD:fpexcept.obj
+ 0002:00001abc       ??_C@_05JNMC@_cabs?$AA@    0041fabc     LIBCD:fpexcept.obj
+ 0002:00001ac4       ??_C@_05MEKH@ldexp?$AA@    0041fac4     LIBCD:fpexcept.obj
+ 0002:00001acc       ??_C@_04KAOJ@modf?$AA@     0041facc     LIBCD:fpexcept.obj
+ 0002:00001ad4       ??_C@_04EHAJ@fabs?$AA@     0041fad4     LIBCD:fpexcept.obj
+ 0002:00001adc       ??_C@_05MFBN@floor?$AA@    0041fadc     LIBCD:fpexcept.obj
+ 0002:00001ae4       ??_C@_04JJMP@ceil?$AA@     0041fae4     LIBCD:fpexcept.obj
+ 0002:00001aec       ??_C@_03JLPI@tan?$AA@      0041faec     LIBCD:fpexcept.obj
+ 0002:00001af0       ??_C@_03DLFL@cos?$AA@      0041faf0     LIBCD:fpexcept.obj
+ 0002:00001af4       ??_C@_03JAMN@sin?$AA@      0041faf4     LIBCD:fpexcept.obj
+ 0002:00001af8       ??_C@_04LMBE@sqrt?$AA@     0041faf8     LIBCD:fpexcept.obj
+ 0002:00001b00       ??_C@_05BFPO@atan2?$AA@    0041fb00     LIBCD:fpexcept.obj
+ 0002:00001b08       ??_C@_04EAGN@atan?$AA@     0041fb08     LIBCD:fpexcept.obj
+ 0002:00001b10       ??_C@_04OAMO@acos?$AA@     0041fb10     LIBCD:fpexcept.obj
+ 0002:00001b18       ??_C@_04ELFI@asin?$AA@     0041fb18     LIBCD:fpexcept.obj
+ 0002:00001b20       ??_C@_04LFAD@tanh?$AA@     0041fb20     LIBCD:fpexcept.obj
+ 0002:00001b28       ??_C@_04PFKD@cosh?$AA@     0041fb28     LIBCD:fpexcept.obj
+ 0002:00001b30       ??_C@_04NPAI@sinh?$AA@     0041fb30     LIBCD:fpexcept.obj
+ 0002:00001b38       ??_C@_05IJHH@log10?$AA@    0041fb38     LIBCD:fpexcept.obj
+ 0002:00001b40       ??_C@_03BGKD@log?$AA@      0041fb40     LIBCD:fpexcept.obj
+ 0002:00001b44       ??_C@_03EGFG@pow?$AA@      0041fb44     LIBCD:fpexcept.obj
+ 0002:00001b48       ??_C@_03CDGJ@exp?$AA@      0041fb48     LIBCD:fpexcept.obj
+ 0003:00000000       ___xc_a                    00420000     LIBCD:crt0init.obj
+ 0003:00000004       ___xc_z                    00420004     LIBCD:crt0init.obj
+ 0003:00000008       ___xi_a                    00420008     LIBCD:crt0init.obj
+ 0003:00000014       ___xi_z                    00420014     LIBCD:crt0init.obj
+ 0003:00000018       ___xp_a                    00420018     LIBCD:crt0init.obj
+ 0003:00000020       ___xp_z                    00420020     LIBCD:crt0init.obj
+ 0003:00000024       ___xt_a                    00420024     LIBCD:crt0init.obj
+ 0003:00000028       ___xt_z                    00420028     LIBCD:crt0init.obj
+ 0003:00000068       _windInfo                  00420068     glaux:tk.obj
+ 0003:00000088       _tkPopupEnable             00420088     glaux:tk.obj
+ 0003:0000008c       _tkNumStaticColors         0042008c     glaux:tk.obj
+ 0003:00000090       _gacrBlackAndWhite         00420090     glaux:tk.obj
+ 0003:000000f8       _gaiStaticIndex            004200f8     glaux:tk.obj
+ 0003:00000160       _gaszSysClrNames           00420160     glaux:tk.obj
+ 0003:000001c4       _lpszClassName             004201c4     glaux:tk.obj
+ 0003:000001c8       _lpszClassNameW            004201c8     glaux:tk.obj
+ 0003:000001d0       _colorMaps                 004201d0     glaux:tk.obj
+ 0003:00000dd0       _auxRGBMap                 00420dd0     glaux:tk.obj
+ 0003:00000ec0       _abThreeToEight            00420ec0     glaux:tk.obj
+ 0003:00000ec8       _abTwoToEight              00420ec8     glaux:tk.obj
+ 0003:00000ecc       _abOneToEight              00420ecc     glaux:tk.obj
+ 0003:00000ed0       _aiDefaultOverride         00420ed0     glaux:tk.obj
+ 0003:00000f20       _apeDefaultPalEntry        00420f20     glaux:tk.obj
+ 0003:00000f70       __fltused                  00420f70     LIBCD:fpinit.obj
+ 0003:00000f74       __ldused                   00420f74     LIBCD:fpinit.obj
+ 0003:00000f78       __FPinit                   00420f78     LIBCD:fpinit.obj
+ 0003:00000f7c       __FPmtinit                 00420f7c     LIBCD:fpinit.obj
+ 0003:00000f80       __FPmtterm                 00420f80     LIBCD:fpinit.obj
+ 0003:00000f98       __aexit_rtn                00420f98     LIBCD:wincrt0.obj
+ 0003:00000f9c       ___app_type                00420f9c     LIBCD:wincrt0.obj
+ 0003:00000fa0       __crtDbgFlag               00420fa0     LIBCD:dbgheap.obj
+ 0003:00000fa8       __crtBreakAlloc            00420fa8     LIBCD:dbgheap.obj
+ 0003:00000fc4       __crtAssertBusy            00420fc4     LIBCD:dbgrpt.obj
+ 0003:00000fc8       __CrtDbgMode               00420fc8     LIBCD:dbgrpt.obj
+ 0003:00000fd4       __CrtDbgFile               00420fd4     LIBCD:dbgrpt.obj
+ 0003:00000ff0       ___badioinfo               00420ff0     LIBCD:ioinit.obj
+ 0003:00000ff8       __cfltcvt_tab              00420ff8     LIBCD:cmiscdat.obj
+ 0003:00001010       ___nullstring              00421010     LIBCD:output.obj
+ 0003:00001014       ___wnullstring             00421014     LIBCD:output.obj
+ 0003:00001020       __indefinite               00421020     LIBCD:87disp.obj
+ 0003:0000102a       __piby2                    0042102a     LIBCD:87disp.obj
+ 0003:0000103c       __cpower                   0042103c     LIBCD:87disp.obj
+ 0003:00001050       __XcptActTab               00421050     LIBCD:winxfltr.obj
+ 0003:000010c8       __First_FPE_Indx           004210c8     LIBCD:winxfltr.obj
+ 0003:000010cc       __Num_FPE                  004210cc     LIBCD:winxfltr.obj
+ 0003:000010d0       __XcptActTabCount          004210d0     LIBCD:winxfltr.obj
+ 0003:000010d4       __fpecode                  004210d4     LIBCD:winxfltr.obj
+ 0003:000010d8       __amblksiz                 004210d8     LIBCD:heapinit.obj
+ 0003:000010dc       __NLG_Destination          004210dc     LIBCD:exsup.obj
+ 0003:00001180       __pfnAllocHook             00421180     LIBCD:dbghook.obj
+ 0003:00001184       ___sbh_threshold           00421184     LIBCD:sbheap.obj
+ 0003:00001188       __pctype                   00421188     LIBCD:ctype.obj
+ 0003:0000118c       __pwctype                  0042118c     LIBCD:ctype.obj
+ 0003:00001190       __ctype                    00421190     LIBCD:ctype.obj
+ 0003:00001394       ___mb_cur_max              00421394     LIBCD:nlsdata1.obj
+ 0003:00001398       ___decimal_point           00421398     LIBCD:nlsdata1.obj
+ 0003:0000139c       ___decimal_point_length    0042139c     LIBCD:nlsdata1.obj
+ 0003:00001518       __iob                      00421518     LIBCD:_file.obj
+ 0003:000019a8       __matherr_flag             004219a8     LIBCD:matherr.obj
+ 0003:000019c8       __d_inf                    004219c8     LIBCD:util.obj
+ 0003:000019d0       __d_ind                    004219d0     LIBCD:util.obj
+ 0003:000019d8       __d_max                    004219d8     LIBCD:util.obj
+ 0003:000019e0       __d_min                    004219e0     LIBCD:util.obj
+ 0003:000019e8       __d_mzero                  004219e8     LIBCD:util.obj
+ 0003:000019f0       __pow10pos                 004219f0     LIBCD:constpow.obj
+ 0003:00001b50       __pow10neg                 00421b50     LIBCD:constpow.obj
+ 0003:00001cb0       ?di_KeyboardBuffer@@3PAEA  00421cb0     k_globals.obj
+ 0003:00001db0       ?di_MouseState@@3U_DIMOUSESTATE@@A 00421db0     k_globals.obj
+ 0003:00001dc0       ?wndStruct@@3UWndStruct@@A 00421dc0     k_globals.obj
+ 0003:00001e00       ?hInstance@@3PAUHINSTANCE__@@A 00421e00     k_globals.obj
+ 0003:00003638       _tkhwnd                    00423638     glaux:tk.obj
+ 0003:0000363c       _tkhdc                     0042363c     glaux:tk.obj
+ 0003:00003640       _tkhrc                     00423640     glaux:tk.obj
+ 0003:00003644       _tkhpalette                00423644     glaux:tk.obj
+ 0003:00003648       _tkUseStaticColors         00423648     glaux:tk.obj
+ 0003:0000364c       _tkSystemColorsInUse       0042364c     glaux:tk.obj
+ 0003:00003650       _tkStaticColorsSaved       00423650     glaux:tk.obj
+ 0003:00003654       _ExposeFunc                00423654     glaux:tk.obj
+ 0003:00003658       _ReshapeFunc               00423658     glaux:tk.obj
+ 0003:0000365c       _DisplayFunc               0042365c     glaux:tk.obj
+ 0003:00003660       _KeyDownFunc               00423660     glaux:tk.obj
+ 0003:00003664       _MouseDownFunc             00423664     glaux:tk.obj
+ 0003:00003668       _MouseUpFunc               00423668     glaux:tk.obj
+ 0003:0000366c       _MouseMoveFunc             0042366c     glaux:tk.obj
+ 0003:00003670       _IdleFunc                  00423670     glaux:tk.obj
+ 0003:00003674       ___fastflag                00423674     LIBCD:fpinit.obj
+ 0003:00003678       __adjust_fdiv              00423678     LIBCD:fpinit.obj
+ 0003:0000367c       __aenvptr                  0042367c     LIBCD:wincrt0.obj
+ 0003:00003680       __wenvptr                  00423680     LIBCD:wincrt0.obj
+ 0003:00003684       ___error_mode              00423684     LIBCD:wincrt0.obj
+ 0003:000036a0       _errno                     004236a0     LIBCD:crt0dat.obj
+ 0003:000036a4       __doserrno                 004236a4     LIBCD:crt0dat.obj
+ 0003:000036a8       __umaskval                 004236a8     LIBCD:crt0dat.obj
+ 0003:000036ac       __osver                    004236ac     LIBCD:crt0dat.obj
+ 0003:000036b0       __winver                   004236b0     LIBCD:crt0dat.obj
+ 0003:000036b4       __winmajor                 004236b4     LIBCD:crt0dat.obj
+ 0003:000036b8       __winminor                 004236b8     LIBCD:crt0dat.obj
+ 0003:000036bc       ___argc                    004236bc     LIBCD:crt0dat.obj
+ 0003:000036c0       ___argv                    004236c0     LIBCD:crt0dat.obj
+ 0003:000036c4       ___wargv                   004236c4     LIBCD:crt0dat.obj
+ 0003:000036c8       __environ                  004236c8     LIBCD:crt0dat.obj
+ 0003:000036cc       ___initenv                 004236cc     LIBCD:crt0dat.obj
+ 0003:000036d0       __wenviron                 004236d0     LIBCD:crt0dat.obj
+ 0003:000036d4       ___winitenv                004236d4     LIBCD:crt0dat.obj
+ 0003:000036d8       __pgmptr                   004236d8     LIBCD:crt0dat.obj
+ 0003:000036dc       __wpgmptr                  004236dc     LIBCD:crt0dat.obj
+ 0003:000036e0       __exitflag                 004236e0     LIBCD:crt0dat.obj
+ 0003:000036e4       __C_Termination_Done       004236e4     LIBCD:crt0dat.obj
+ 0003:000036e8       __C_Exit_Done              004236e8     LIBCD:crt0dat.obj
+ 0003:00003700       __pxcptinfoptrs            00423700     LIBCD:winxfltr.obj
+ 0003:0000380c       __adbgmsg                  0042380c     LIBCD:crt0msg.obj
+ 0003:00003810       __newmode                  00423810     LIBCD:_newmode.obj
+ 0003:00003814       ?_pnhHeap@@3P6AHI@ZA       00423814     LIBCD:handler.obj
+ 0003:00003838       __cflush                   00423838     LIBCD:_file.obj
+ 0003:0000383c       __commode                  0042383c     LIBCD:ncommode.obj
+ 0003:00003878       __fmode                    00423878     LIBCD:txtmode.obj
+ 0003:00003880       ___lc_handle               00423880     LIBCD:nlsdata2.obj
+ 0003:00003898       ___lc_codepage             00423898     LIBCD:nlsdata2.obj
+ 0003:0000389c       ___lc_collate_cp           0042389c     LIBCD:nlsdata2.obj
+ 0003:000038a0       _gacrSave                  004238a0     <common>
+ 0003:00003920       _tkOSVerInfo               00423920     <common>
+ 0003:000039b4       ___mbcodepage              004239b4     <common>
+ 0003:000039c0       ___mbulinfo                004239c0     <common>
+ 0003:000039cc       ___ismbcodepage            004239cc     <common>
+ 0003:000039e0       __mbcasemap                004239e0     <common>
+ 0003:00003ae0       __mbctype                  00423ae0     <common>
+ 0003:00003be4       ___mblcid                  00423be4     <common>
+ 0003:00003be8       ___piob                    00423be8     <common>
+ 0003:00003c00       __bufin                    00423c00     <common>
+ 0003:00004c00       __nstream                  00424c00     <common>
+ 0003:00004c04       ___sbh_sizeHeaderList      00424c04     <common>
+ 0003:00004c08       ___sbh_indGroupDefer       00424c08     <common>
+ 0003:00004c0c       ___sbh_pHeaderScan         00424c0c     <common>
+ 0003:00004c10       ___sbh_pHeaderDefer        00424c10     <common>
+ 0003:00004c14       ___sbh_cntHeaderList       00424c14     <common>
+ 0003:00004c18       ___sbh_pHeaderList         00424c18     <common>
+ 0003:00004c1c       __crtheap                  00424c1c     <common>
+ 0003:00004c20       ___env_initialized         00424c20     <common>
+ 0003:00004c24       ___mbctype_initialized     00424c24     <common>
+ 0003:00004c28       ___onexitend               00424c28     <common>
+ 0003:00004c2c       ___onexitbegin             00424c2c     <common>
+ 0003:00004c40       ___pioinfo                 00424c40     <common>
+ 0003:00004d40       __nhandle                  00424d40     <common>
+ 0003:00004d44       __pfnReportHook            00424d44     <common>
+ 0003:00004d48       __pfnDumpClient            00424d48     <common>
+ 0003:00004d4c       __acmdln                   00424d4c     <common>
+ 0004:00000000       __IMPORT_DESCRIPTOR_USER32 00425000     user32:USER32.dll
+ 0004:00000014       __IMPORT_DESCRIPTOR_GDI32  00425014     gdi32:GDI32.dll
+ 0004:00000028       __IMPORT_DESCRIPTOR_OPENGL32 00425028     OpenGL32:OPENGL32.dll
+ 0004:0000003c       __IMPORT_DESCRIPTOR_GLU32  0042503c     glu32:GLU32.dll
+ 0004:00000050       __IMPORT_DESCRIPTOR_DINPUT 00425050     dinput:DINPUT.dll
+ 0004:00000064       __IMPORT_DESCRIPTOR_KERNEL32 00425064     kernel32:KERNEL32.dll
+ 0004:00000078       __IMPORT_DESCRIPTOR_ADVAPI32 00425078     advapi32:ADVAPI32.dll
+ 0004:0000008c       __NULL_IMPORT_DESCRIPTOR   0042508c     user32:USER32.dll
+ 0004:0000033c       __imp__RegOpenKeyExA@20    0042533c     advapi32:ADVAPI32.dll
+ 0004:00000340       __imp__RegQueryValueExA@24 00425340     advapi32:ADVAPI32.dll
+ 0004:00000344       __imp__RegCloseKey@4       00425344     advapi32:ADVAPI32.dll
+ 0004:00000348       \177ADVAPI32_NULL_THUNK_DATA 00425348     advapi32:ADVAPI32.dll
+ 0004:0000034c       __imp__DirectInputCreateA@16 0042534c     dinput:DINPUT.dll
+ 0004:00000350       \177DINPUT_NULL_THUNK_DATA 00425350     dinput:DINPUT.dll
+ 0004:00000354       __imp__GetPixelFormat@4    00425354     gdi32:GDI32.dll
+ 0004:00000358       __imp__UnrealizeObject@4   00425358     gdi32:GDI32.dll
+ 0004:0000035c       __imp__CreatePalette@4     0042535c     gdi32:GDI32.dll
+ 0004:00000360       __imp__SetSystemPaletteUse@8 00425360     gdi32:GDI32.dll
+ 0004:00000364       __imp__SelectPalette@12    00425364     gdi32:GDI32.dll
+ 0004:00000368       __imp__RealizePalette@4    00425368     gdi32:GDI32.dll
+ 0004:0000036c       __imp__SwapBuffers@4       0042536c     gdi32:GDI32.dll
+ 0004:00000370       __imp__DescribePixelFormat@16 00425370     gdi32:GDI32.dll
+ 0004:00000374       __imp__SetPaletteEntries@16 00425374     gdi32:GDI32.dll
+ 0004:00000378       __imp__GetPaletteEntries@16 00425378     gdi32:GDI32.dll
+ 0004:0000037c       __imp__CreateDIBSection@24 0042537c     gdi32:GDI32.dll
+ 0004:00000380       __imp__SetDIBits@28        00425380     gdi32:GDI32.dll
+ 0004:00000384       __imp__SelectObject@8      00425384     gdi32:GDI32.dll
+ 0004:00000388       __imp__CreateFontA@56      00425388     gdi32:GDI32.dll
+ 0004:0000038c       __imp__SetPixelFormat@12   0042538c     gdi32:GDI32.dll
+ 0004:00000390       __imp__ChoosePixelFormat@8 00425390     gdi32:GDI32.dll
+ 0004:00000394       __imp__GetStockObject@4    00425394     gdi32:GDI32.dll
+ 0004:00000398       __imp__GdiFlush@0          00425398     gdi32:GDI32.dll
+ 0004:0000039c       __imp__DeleteDC@4          0042539c     gdi32:GDI32.dll
+ 0004:000003a0       __imp__DeleteObject@4      004253a0     gdi32:GDI32.dll
+ 0004:000003a4       __imp__CreateCompatibleDC@4 004253a4     gdi32:GDI32.dll
+ 0004:000003a8       \177GDI32_NULL_THUNK_DATA  004253a8     gdi32:GDI32.dll
+ 0004:000003ac       __imp__gluBuild2DMipmaps@28 004253ac     glu32:GLU32.dll
+ 0004:000003b0       __imp__gluPerspective@32   004253b0     glu32:GLU32.dll
+ 0004:000003b4       \177GLU32_NULL_THUNK_DATA  004253b4     glu32:GLU32.dll
+ 0004:000003b8       __imp__HeapValidate@12     004253b8     kernel32:KERNEL32.dll
+ 0004:000003bc       __imp__FreeEnvironmentStringsA@4 004253bc     kernel32:KERNEL32.dll
+ 0004:000003c0       __imp__FreeEnvironmentStringsW@4 004253c0     kernel32:KERNEL32.dll
+ 0004:000003c4       __imp__GetCommandLineA@0   004253c4     kernel32:KERNEL32.dll
+ 0004:000003c8       __imp__RaiseException@16   004253c8     kernel32:KERNEL32.dll
+ 0004:000003cc       __imp__GetVersion@0        004253cc     kernel32:KERNEL32.dll
+ 0004:000003d0       __imp__LCMapStringA@24     004253d0     kernel32:KERNEL32.dll
+ 0004:000003d4       __imp__SetEndOfFile@4      004253d4     kernel32:KERNEL32.dll
+ 0004:000003d8       __imp__LCMapStringW@24     004253d8     kernel32:KERNEL32.dll
+ 0004:000003dc       __imp__GetStringTypeA@20   004253dc     kernel32:KERNEL32.dll
+ 0004:000003e0       __imp__MultiByteToWideChar@24 004253e0     kernel32:KERNEL32.dll
+ 0004:000003e4       __imp__GetStringTypeW@16   004253e4     kernel32:KERNEL32.dll
+ 0004:000003e8       __imp__GetACP@0            004253e8     kernel32:KERNEL32.dll
+ 0004:000003ec       __imp__GetCPInfo@8         004253ec     kernel32:KERNEL32.dll
+ 0004:000003f0       __imp__GetOEMCP@0          004253f0     kernel32:KERNEL32.dll
+ 0004:000003f4       __imp__SetStdHandle@8      004253f4     kernel32:KERNEL32.dll
+ 0004:000003f8       __imp__SetConsoleCtrlHandler@8 004253f8     kernel32:KERNEL32.dll
+ 0004:000003fc       __imp__FlushFileBuffers@4  004253fc     kernel32:KERNEL32.dll
+ 0004:00000400       __imp__HeapReAlloc@16      00425400     kernel32:KERNEL32.dll
+ 0004:00000404       __imp__HeapAlloc@12        00425404     kernel32:KERNEL32.dll
+ 0004:00000408       __imp__VirtualAlloc@16     00425408     kernel32:KERNEL32.dll
+ 0004:0000040c       __imp__VirtualFree@12      0042540c     kernel32:KERNEL32.dll
+ 0004:00000410       __imp__HeapFree@12         00425410     kernel32:KERNEL32.dll
+ 0004:00000414       __imp__RtlUnwind@16        00425414     kernel32:KERNEL32.dll
+ 0004:00000418       __imp__HeapDestroy@4       00425418     kernel32:KERNEL32.dll
+ 0004:0000041c       __imp__GetEnvironmentStringsW@0 0042541c     kernel32:KERNEL32.dll
+ 0004:00000420       __imp__HeapCreate@12       00425420     kernel32:KERNEL32.dll
+ 0004:00000424       __imp__GetStartupInfoA@4   00425424     kernel32:KERNEL32.dll
+ 0004:00000428       __imp__UnhandledExceptionFilter@4 00425428     kernel32:KERNEL32.dll
+ 0004:0000042c       __imp__WideCharToMultiByte@32 0042542c     kernel32:KERNEL32.dll
+ 0004:00000430       __imp__TerminateProcess@8  00425430     kernel32:KERNEL32.dll
+ 0004:00000434       __imp__GetFileType@4       00425434     kernel32:KERNEL32.dll
+ 0004:00000438       __imp__GetCurrentProcess@0 00425438     kernel32:KERNEL32.dll
+ 0004:0000043c       __imp__SetFilePointer@16   0042543c     kernel32:KERNEL32.dll
+ 0004:00000440       __imp__ReadFile@20         00425440     kernel32:KERNEL32.dll
+ 0004:00000444       __imp__CreateFileA@28      00425444     kernel32:KERNEL32.dll
+ 0004:00000448       __imp__CreateFileW@28      00425448     kernel32:KERNEL32.dll
+ 0004:0000044c       __imp__CloseHandle@4       0042544c     kernel32:KERNEL32.dll
+ 0004:00000450       __imp__UnmapViewOfFile@4   00425450     kernel32:KERNEL32.dll
+ 0004:00000454       __imp__LocalFree@4         00425454     kernel32:KERNEL32.dll
+ 0004:00000458       __imp__LocalAlloc@8        00425458     kernel32:KERNEL32.dll
+ 0004:0000045c       __imp__MapViewOfFile@20    0042545c     kernel32:KERNEL32.dll
+ 0004:00000460       __imp__CreateFileMappingA@24 00425460     kernel32:KERNEL32.dll
+ 0004:00000464       __imp__GetVersionExA@4     00425464     kernel32:KERNEL32.dll
+ 0004:00000468       __imp__GetModuleHandleA@4  00425468     kernel32:KERNEL32.dll
+ 0004:0000046c       __imp__ExitProcess@4       0042546c     kernel32:KERNEL32.dll
+ 0004:00000470       __imp__Sleep@4             00425470     kernel32:KERNEL32.dll
+ 0004:00000474       __imp__WriteFile@20        00425474     kernel32:KERNEL32.dll
+ 0004:00000478       __imp__InterlockedDecrement@4 00425478     kernel32:KERNEL32.dll
+ 0004:0000047c       __imp__GetEnvironmentStrings@0 0042547c     kernel32:KERNEL32.dll
+ 0004:00000480       __imp__IsBadWritePtr@8     00425480     kernel32:KERNEL32.dll
+ 0004:00000484       __imp__IsBadReadPtr@8      00425484     kernel32:KERNEL32.dll
+ 0004:00000488       __imp__DebugBreak@0        00425488     kernel32:KERNEL32.dll
+ 0004:0000048c       __imp__GetStdHandle@4      0042548c     kernel32:KERNEL32.dll
+ 0004:00000490       __imp__LoadLibraryA@4      00425490     kernel32:KERNEL32.dll
+ 0004:00000494       __imp__OutputDebugStringA@4 00425494     kernel32:KERNEL32.dll
+ 0004:00000498       __imp__GetProcAddress@8    00425498     kernel32:KERNEL32.dll
+ 0004:0000049c       __imp__GetLastError@0      0042549c     kernel32:KERNEL32.dll
+ 0004:000004a0       __imp__InterlockedIncrement@4 004254a0     kernel32:KERNEL32.dll
+ 0004:000004a4       __imp__GetModuleFileNameA@12 004254a4     kernel32:KERNEL32.dll
+ 0004:000004a8       __imp__SetHandleCount@4    004254a8     kernel32:KERNEL32.dll
+ 0004:000004ac       \177KERNEL32_NULL_THUNK_DATA 004254ac     kernel32:KERNEL32.dll
+ 0004:000004b0       __imp__glCallLists@12      004254b0     OpenGL32:OPENGL32.dll
+ 0004:000004b4       __imp__glPopAttrib@0       004254b4     OpenGL32:OPENGL32.dll
+ 0004:000004b8       __imp__glTranslatef@12     004254b8     OpenGL32:OPENGL32.dll
+ 0004:000004bc       __imp__glListBase@4        004254bc     OpenGL32:OPENGL32.dll
+ 0004:000004c0       __imp__glPushAttrib@4      004254c0     OpenGL32:OPENGL32.dll
+ 0004:000004c4       __imp__glBindTexture@8     004254c4     OpenGL32:OPENGL32.dll
+ 0004:000004c8       __imp__glPushMatrix@0      004254c8     OpenGL32:OPENGL32.dll
+ 0004:000004cc       __imp__glMatrixMode@4      004254cc     OpenGL32:OPENGL32.dll
+ 0004:000004d0       __imp__glTexImage2D@36     004254d0     OpenGL32:OPENGL32.dll
+ 0004:000004d4       __imp__glClear@4           004254d4     OpenGL32:OPENGL32.dll
+ 0004:000004d8       __imp__glTexParameteri@12  004254d8     OpenGL32:OPENGL32.dll
+ 0004:000004dc       __imp__glLightfv@12        004254dc     OpenGL32:OPENGL32.dll
+ 0004:000004e0       __imp__glClearColor@16     004254e0     OpenGL32:OPENGL32.dll
+ 0004:000004e4       __imp__glClearDepth@8      004254e4     OpenGL32:OPENGL32.dll
+ 0004:000004e8       __imp__glDepthFunc@4       004254e8     OpenGL32:OPENGL32.dll
+ 0004:000004ec       __imp__wglCreateContext@4  004254ec     OpenGL32:OPENGL32.dll
+ 0004:000004f0       __imp__glCullFace@4        004254f0     OpenGL32:OPENGL32.dll
+ 0004:000004f4       __imp__glViewport@16       004254f4     OpenGL32:OPENGL32.dll
+ 0004:000004f8       __imp__glEnable@4          004254f8     OpenGL32:OPENGL32.dll
+ 0004:000004fc       __imp__wglMakeCurrent@8    004254fc     OpenGL32:OPENGL32.dll
+ 0004:00000500       __imp__wglDeleteContext@4  00425500     OpenGL32:OPENGL32.dll
+ 0004:00000504       __imp__glColor3d@24        00425504     OpenGL32:OPENGL32.dll
+ 0004:00000508       __imp__glTexCoord2f@8      00425508     OpenGL32:OPENGL32.dll
+ 0004:0000050c       __imp__glVertex3d@24       0042550c     OpenGL32:OPENGL32.dll
+ 0004:00000510       __imp__glNormal3f@12       00425510     OpenGL32:OPENGL32.dll
+ 0004:00000514       __imp__glShadeModel@4      00425514     OpenGL32:OPENGL32.dll
+ 0004:00000518       __imp__glBegin@4           00425518     OpenGL32:OPENGL32.dll
+ 0004:0000051c       __imp__glLoadIdentity@0    0042551c     OpenGL32:OPENGL32.dll
+ 0004:00000520       __imp__glVertex3f@12       00425520     OpenGL32:OPENGL32.dll
+ 0004:00000524       __imp__glEnd@0             00425524     OpenGL32:OPENGL32.dll
+ 0004:00000528       __imp__glRotatef@16        00425528     OpenGL32:OPENGL32.dll
+ 0004:0000052c       __imp__glGenLists@4        0042552c     OpenGL32:OPENGL32.dll
+ 0004:00000530       __imp__glPopMatrix@0       00425530     OpenGL32:OPENGL32.dll
+ 0004:00000534       __imp__wglUseFontOutlinesA@32 00425534     OpenGL32:OPENGL32.dll
+ 0004:00000538       \177OPENGL32_NULL_THUNK_DATA 00425538     OpenGL32:OPENGL32.dll
+ 0004:0000053c       __imp__GetFocus@0          0042553c     user32:USER32.dll
+ 0004:00000540       __imp__GetMessageA@16      00425540     user32:USER32.dll
+ 0004:00000544       __imp__TranslateMessage@4  00425544     user32:USER32.dll
+ 0004:00000548       __imp__PeekMessageA@20     00425548     user32:USER32.dll
+ 0004:0000054c       __imp__GetClientRect@8     0042554c     user32:USER32.dll
+ 0004:00000550       __imp__GetSystemMetrics@4  00425550     user32:USER32.dll
+ 0004:00000554       __imp__GetWindowRect@8     00425554     user32:USER32.dll
+ 0004:00000558       __imp__CreateWindowExW@48  00425558     user32:USER32.dll
+ 0004:0000055c       __imp__wsprintfA           0042555c     user32:USER32.dll
+ 0004:00000560       __imp__DispatchMessageA@4  00425560     user32:USER32.dll
+ 0004:00000564       __imp__GetCursorPos@4      00425564     user32:USER32.dll
+ 0004:00000568       __imp__SetCapture@4        00425568     user32:USER32.dll
+ 0004:0000056c       __imp__ReleaseCapture@0    0042556c     user32:USER32.dll
+ 0004:00000570       __imp__GetKeyState@4       00425570     user32:USER32.dll
+ 0004:00000574       __imp__DestroyWindow@4     00425574     user32:USER32.dll
+ 0004:00000578       __imp__PostMessageA@16     00425578     user32:USER32.dll
+ 0004:0000057c       __imp__SetSysColors@12     0042557c     user32:USER32.dll
+ 0004:00000580       __imp__GetSysColor@4       00425580     user32:USER32.dll
+ 0004:00000584       __imp__PostQuitMessage@4   00425584     user32:USER32.dll
+ 0004:00000588       __imp__AdjustWindowRect@12 00425588     user32:USER32.dll
+ 0004:0000058c       __imp__RegisterClassW@4    0042558c     user32:USER32.dll
+ 0004:00000590       __imp__InvalidateRect@12   00425590     user32:USER32.dll
+ 0004:00000594       __imp__CreateWindowExA@48  00425594     user32:USER32.dll
+ 0004:00000598       __imp__ShowWindow@8        00425598     user32:USER32.dll
+ 0004:0000059c       __imp__SetForegroundWindow@4 0042559c     user32:USER32.dll
+ 0004:000005a0       __imp__SetFocus@4          004255a0     user32:USER32.dll
+ 0004:000005a4       __imp__LoadCursorA@8       004255a4     user32:USER32.dll
+ 0004:000005a8       __imp__LoadIconA@8         004255a8     user32:USER32.dll
+ 0004:000005ac       __imp__RegisterClassA@4    004255ac     user32:USER32.dll
+ 0004:000005b0       __imp__BeginPaint@8        004255b0     user32:USER32.dll
+ 0004:000005b4       __imp__EndPaint@8          004255b4     user32:USER32.dll
+ 0004:000005b8       __imp__DefWindowProcA@16   004255b8     user32:USER32.dll
+ 0004:000005bc       __imp__AdjustWindowRectEx@16 004255bc     user32:USER32.dll
+ 0004:000005c0       __imp__GetDC@4             004255c0     user32:USER32.dll
+ 0004:000005c4       __imp__ChangeDisplaySettingsA@8 004255c4     user32:USER32.dll
+ 0004:000005c8       __imp__ShowCursor@4        004255c8     user32:USER32.dll
+ 0004:000005cc       __imp__ReleaseDC@8         004255cc     user32:USER32.dll
+ 0004:000005d0       __imp__MessageBoxA@16      004255d0     user32:USER32.dll
+ 0004:000005d4       \177USER32_NULL_THUNK_DATA 004255d4     user32:USER32.dll
+
+ entry point at        0001:0000aa20
+
+ Static symbols
+
+ 0001:00006360       ?BTMP_PCX_LoadHeader@@YAXPAU_iobuf@@PAUpcxHeader_t@@@Z 00407360 f   pcx.obj
+ 0001:00005f40       ?R_Tx_InitTexture@@YAXIIG@Z 00406f40 f   texture.obj
+ 0001:00005230       ?R_BSP_SplitPolygon@@YAHPAUbspNode_t@@H0HPAUPlane_t@@PAUPoly_t@@@Z 00406230 f   bsp_comp.obj
+ 0001:00005280       ?R_BSP_FindSplitPlane@@YAHPAUPolySet_t@@PAH111@Z 00406280 f   bsp_comp.obj
+ 0001:00004090       ?DX_InitInput@@YAPAXXZ     00405090 f   DXWrapper.obj
+ 0001:00001100       ?MD2_InitStruct@@YAXPAUmd2Struct_t@@PAU_iobuf@@@Z 00402100 f   md2Loader.obj
+ 0001:00001270       ?MD2_TranslateVertex@@YAMMME@Z 00402270 f   md2Loader.obj
+ 0001:000001c0       ?IG_3DS_LoadObject@@YAXPAUModel_t@@PAU_iobuf@@@Z 004011c0 f   Import_Geo.obj
+ 0001:00000630       ?IG_3DS_ReturnVersionNumber@@YAGPAU_iobuf@@@Z 00401630 f   Import_Geo.obj
+ 0001:00000690       ?IG_3DS_FindChunkID@@YAJGPAU_iobuf@@@Z 00401690 f   Import_Geo.obj
+ 0001:00000110       ?Import3DSObject@@YAXPAUModel_t@@PAU_iobuf@@@Z 00401110 f   import_3ds.obj
+ 0001:0001b730       __get_fname                0041c730 f   LIBCD:fpexcept.obj
+ 0001:000197b0       _strncnt                   0041a7b0 f   LIBCD:a_map.obj
+ 0001:00019030       MORE32                     0041a030 f   LIBCD:llshl.obj
+ 0001:0001903a       RETZERO                    0041a03a f   LIBCD:llshl.obj
+ 0001:00018450       _getSystemCP               00419450 f   LIBCD:mbctype.obj
+ 0001:000184b0       _CPtoLCID                  004194b0 f   LIBCD:mbctype.obj
+ 0001:00018530       _setSBCS                   00419530 f   LIBCD:mbctype.obj
+ 0001:000185b0       _setSBUpLow                004195b0 f   LIBCD:mbctype.obj
+ 0001:000180e0       _x_ismbbtype               004190e0 f   LIBCD:ismbbyte.obj
+ 0001:00017d81       L1                         00418d81 f   LIBCD:ullrem.obj
+ 0001:00017d8f       L3                         00418d8f f   LIBCD:ullrem.obj
+ 0001:00017dba       L4                         00418dba f   LIBCD:ullrem.obj
+ 0001:00017dc2       L5                         00418dc2 f   LIBCD:ullrem.obj
+ 0001:00017dd1       L2                         00418dd1 f   LIBCD:ullrem.obj
+ 0001:00017d12       L1                         00418d12 f   LIBCD:ulldiv.obj
+ 0001:00017d20       L3                         00418d20 f   LIBCD:ulldiv.obj
+ 0001:00017d4e       L4                         00418d4e f   LIBCD:ulldiv.obj
+ 0001:00017d4f       L5                         00418d4f f   LIBCD:ulldiv.obj
+ 0001:00017d53       L2                         00418d53 f   LIBCD:ulldiv.obj
+ 0001:00017940       LeadUp1                    00418940 f   LIBCD:memmove.obj
+ 0001:0001796c       LeadUp2                    0041896c f   LIBCD:memmove.obj
+ 0001:00017990       LeadUp3                    00418990 f   LIBCD:memmove.obj
+ 0001:00017a0f       UnwindUp0                  00418a0f f   LIBCD:memmove.obj
+ 0001:000179fc       UnwindUp1                  004189fc f   LIBCD:memmove.obj
+ 0001:000179f4       UnwindUp2                  004189f4 f   LIBCD:memmove.obj
+ 0001:000179ec       UnwindUp3                  004189ec f   LIBCD:memmove.obj
+ 0001:000179e4       UnwindUp4                  004189e4 f   LIBCD:memmove.obj
+ 0001:000179dc       UnwindUp5                  004189dc f   LIBCD:memmove.obj
+ 0001:000179d4       UnwindUp6                  004189d4 f   LIBCD:memmove.obj
+ 0001:000179cc       UnwindUp7                  004189cc f   LIBCD:memmove.obj
+ 0001:00017a28       TrailUp0                   00418a28 f   LIBCD:memmove.obj
+ 0001:00017a30       TrailUp1                   00418a30 f   LIBCD:memmove.obj
+ 0001:00017a3c       TrailUp2                   00418a3c f   LIBCD:memmove.obj
+ 0001:00017a50       TrailUp3                   00418a50 f   LIBCD:memmove.obj
+ 0001:00017ac8       LeadDown1                  00418ac8 f   LIBCD:memmove.obj
+ 0001:00017ae8       LeadDown2                  00418ae8 f   LIBCD:memmove.obj
+ 0001:00017b10       LeadDown3                  00418b10 f   LIBCD:memmove.obj
+ 0001:00017b64       UnwindDown7                00418b64 f   LIBCD:memmove.obj
+ 0001:00017b6c       UnwindDown6                00418b6c f   LIBCD:memmove.obj
+ 0001:00017b74       UnwindDown5                00418b74 f   LIBCD:memmove.obj
+ 0001:00017b7c       UnwindDown4                00418b7c f   LIBCD:memmove.obj
+ 0001:00017b84       UnwindDown3                00418b84 f   LIBCD:memmove.obj
+ 0001:00017b8c       UnwindDown2                00418b8c f   LIBCD:memmove.obj
+ 0001:00017b94       UnwindDown1                00418b94 f   LIBCD:memmove.obj
+ 0001:00017ba7       UnwindDown0                00418ba7 f   LIBCD:memmove.obj
+ 0001:00017bc0       TrailDown0                 00418bc0 f   LIBCD:memmove.obj
+ 0001:00017bc8       TrailDown1                 00418bc8 f   LIBCD:memmove.obj
+ 0001:00017bd8       TrailDown2                 00418bd8 f   LIBCD:memmove.obj
+ 0001:00017bec       TrailDown3                 00418bec f   LIBCD:memmove.obj
+ 0001:000178f0       CopyUp                     004188f0 f   LIBCD:memmove.obj
+ 0001:0001790c       CopyLeadUp                 0041890c f   LIBCD:memmove.obj
+ 0001:00017924       ByteCopyUp                 00418924 f   LIBCD:memmove.obj
+ 0001:0001792c       CopyUnwindUp               0041892c f   LIBCD:memmove.obj
+ 0001:00017a68       CopyDown                   00418a68 f   LIBCD:memmove.obj
+ 0001:00017a90       CopyUnwindDown             00418a90 f   LIBCD:memmove.obj
+ 0001:00017a9c       CopyLeadDown               00418a9c f   LIBCD:memmove.obj
+ 0001:00017ab4       ByteCopyDown               00418ab4 f   LIBCD:memmove.obj
+ 0001:00016930       __abstract_cw              00417930 f   LIBCD:ieee87.obj
+ 0001:00016ab0       __hw_cw                    00417ab0 f   LIBCD:ieee87.obj
+ 0001:00016c10       __abstract_sw              00417c10 f   LIBCD:ieee87.obj
+ 0001:00015804       src_misaligned             00416804 f   LIBCD:strncpy.obj
+ 0001:00015820       tail_loop_start            00416820 f   LIBCD:strncpy.obj
+ 0001:00015825       copy_tail_loop             00416825 f   LIBCD:strncpy.obj
+ 0001:00015832       fill_tail_end1             00416832 f   LIBCD:strncpy.obj
+ 0001:0001583a       align_dest                 0041683a f   LIBCD:strncpy.obj
+ 0001:00015842       dest_align_loop            00416842 f   LIBCD:strncpy.obj
+ 0001:00015854       dest_align_loop_end        00416854 f   LIBCD:strncpy.obj
+ 0001:0001585b       finish_loop                0041685b f   LIBCD:strncpy.obj
+ 0001:0001585e       fill_tail_zero_bytes       0041685e f   LIBCD:strncpy.obj
+ 0001:00015863       finish                     00416863 f   LIBCD:strncpy.obj
+ 0001:00015869       main_loop                  00416869 f   LIBCD:strncpy.obj
+ 0001:00015871       main_loop_entrance         00416871 f   LIBCD:strncpy.obj
+ 0001:000158a7       byte_2                     004168a7 f   LIBCD:strncpy.obj
+ 0001:000158b1       byte_1                     004168b1 f   LIBCD:strncpy.obj
+ 0001:000158bb       byte_0                     004168bb f   LIBCD:strncpy.obj
+ 0001:000158bf       fill_with_EOS_dwords       004168bf f   LIBCD:strncpy.obj
+ 0001:000158c7       fill_dwords_with_EOS       004168c7 f   LIBCD:strncpy.obj
+ 0001:000158c9       fill_with_EOS_loop         004168c9 f   LIBCD:strncpy.obj
+ 0001:000158d1       fill_tail                  004168d1 f   LIBCD:strncpy.obj
+ 0001:000158d6       fill_tail_end              004168d6 f   LIBCD:strncpy.obj
+ 0001:00015490       _ctrlevent_capture@4       00416490 f   LIBCD:winsig.obj
+ 0001:000156c0       _siglookup                 004166c0 f   LIBCD:winsig.obj
+ 0001:000152c0       _$$$00001                  004162c0 f   LIBCD:chkstk.obj
+ 0001:000152cc       probepages                 004162cc f   LIBCD:chkstk.obj
+ 0001:000152e0       lastpage                   004162e0 f   LIBCD:chkstk.obj
+ 0001:000150ed       dest_misaligned            004160ed f   LIBCD:strcat.obj
+ 0001:000150fc       find_end_of_dest_string_loop 004160fc f   LIBCD:strcat.obj
+ 0001:0001512f       start_byte_3               0041612f f   LIBCD:strcat.obj
+ 0001:00015134       start_byte_2               00416134 f   LIBCD:strcat.obj
+ 0001:00015139       start_byte_1               00416139 f   LIBCD:strcat.obj
+ 0001:0001513e       start_byte_0               0041613e f   LIBCD:strcat.obj
+ 0001:0001514d       src_misaligned             0041614d f   LIBCD:strcat.obj
+ 0001:00015161       main_loop                  00416161 f   LIBCD:strcat.obj
+ 0001:00015166       main_loop_entrance         00416166 f   LIBCD:strcat.obj
+ 0001:0001519a       byte_3                     0041619a f   LIBCD:strcat.obj
+ 0001:000151a2       byte_2                     004161a2 f   LIBCD:strcat.obj
+ 0001:000151af       byte_1                     004161af f   LIBCD:strcat.obj
+ 0001:000151b8       byte_0                     004161b8 f   LIBCD:strcat.obj
+ 0001:00015141       copy_start                 00416141 f   LIBCD:strcat.obj
+ 0001:00014d30       _xtoa                      00415d30 f   LIBCD:xtoa.obj
+ 0001:00014eb0       _x64toa@20                 00415eb0 f   LIBCD:xtoa.obj
+ 0001:00014bc0       __hextodec                 00415bc0 f   LIBCD:input.obj
+ 0001:00014c20       __inc                      00415c20 f   LIBCD:input.obj
+ 0001:00014c80       __un_inc                   00415c80 f   LIBCD:input.obj
+ 0001:00014ca0       __whiteout                 00415ca0 f   LIBCD:input.obj
+ 0001:000110f4       _gu_return                 004120f4 f   LIBCD:exsup.obj
+ 0001:000110fc       __unwind_handler           004120fc f   LIBCD:exsup.obj
+ 0001:000109a0       _parse_cmdline             004119a0 f   LIBCD:stdargv.obj
+ 0001:00010650       _xcptlookup                00411650 f   LIBCD:winxfltr.obj
+ 0001:0000ff70       _write_char                00410f70 f   LIBCD:output.obj
+ 0001:0000fff0       _write_multi_char          00410ff0 f   LIBCD:output.obj
+ 0001:00010030       _write_string              00411030 f   LIBCD:output.obj
+ 0001:00010080       _get_int_arg               00411080 f   LIBCD:output.obj
+ 0001:000100a0       _get_int64_arg             004110a0 f   LIBCD:output.obj
+ 0001:000100c0       _get_short_arg             004110c0 f   LIBCD:output.obj
+ 0001:0000eec0       __cftoe_g                  0040fec0 f   LIBCD:cvt.obj
+ 0001:0000ef00       __cftof_g                  0040ff00 f   LIBCD:cvt.obj
+ 0001:0000ef90       __shift                    0040ff90 f   LIBCD:cvt.obj
+ 0001:0000e680       _doexit                    0040f680 f   LIBCD:crt0dat.obj
+ 0001:0000e760       __initterm                 0040f760 f   LIBCD:crt0dat.obj
+ 0001:0000d5c0       _flsall                    0040e5c0 f   LIBCD:fflush.obj
+ 0001:0000cff0       _CrtMessageWindow          0040dff0 f   LIBCD:dbgrpt.obj
+ 0001:0000b0b0       _realloc_help              0040c0b0 f   LIBCD:dbgheap.obj
+ 0001:0000bc70       _CheckBytes                0040cc70 f   LIBCD:dbgheap.obj
+ 0001:0000c800       __printMemBlockData        0040d800 f   LIBCD:dbgheap.obj
+ 0001:0000abb0       _fast_error_exit           0040bbb0 f   LIBCD:wincrt0.obj
+ 0001:0000a863       adjust_loop                0040b863 f   LIBCD:memset.obj
+ 0001:0000a869       dwords                     0040b869 f   LIBCD:memset.obj
+ 0001:0000a883       main_loop_tail             0040b883 f   LIBCD:memset.obj
+ 0001:0000a887       tail                       0040b887 f   LIBCD:memset.obj
+ 0001:0000a88d       finish                     0040b88d f   LIBCD:memset.obj
+ 0001:0000a893       toend                      0040b893 f   LIBCD:memset.obj
+ 0001:0000a61c       str_misaligned             0040b61c f   LIBCD:strlen.obj
+ 0001:0000a630       main_loop                  0040b630 f   LIBCD:strlen.obj
+ 0001:0000a663       byte_3                     0040b663 f   LIBCD:strlen.obj
+ 0001:0000a66d       byte_2                     0040b66d f   LIBCD:strlen.obj
+ 0001:0000a677       byte_1                     0040b677 f   LIBCD:strlen.obj
+ 0001:0000a681       byte_0                     0040b681 f   LIBCD:strlen.obj
+ 0001:0000a340       LeadUp1                    0040b340 f   LIBCD:memcpy.obj
+ 0001:0000a36c       LeadUp2                    0040b36c f   LIBCD:memcpy.obj
+ 0001:0000a390       LeadUp3                    0040b390 f   LIBCD:memcpy.obj
+ 0001:0000a40f       UnwindUp0                  0040b40f f   LIBCD:memcpy.obj
+ 0001:0000a3fc       UnwindUp1                  0040b3fc f   LIBCD:memcpy.obj
+ 0001:0000a3f4       UnwindUp2                  0040b3f4 f   LIBCD:memcpy.obj
+ 0001:0000a3ec       UnwindUp3                  0040b3ec f   LIBCD:memcpy.obj
+ 0001:0000a3e4       UnwindUp4                  0040b3e4 f   LIBCD:memcpy.obj
+ 0001:0000a3dc       UnwindUp5                  0040b3dc f   LIBCD:memcpy.obj
+ 0001:0000a3d4       UnwindUp6                  0040b3d4 f   LIBCD:memcpy.obj
+ 0001:0000a3cc       UnwindUp7                  0040b3cc f   LIBCD:memcpy.obj
+ 0001:0000a428       TrailUp0                   0040b428 f   LIBCD:memcpy.obj
+ 0001:0000a430       TrailUp1                   0040b430 f   LIBCD:memcpy.obj
+ 0001:0000a43c       TrailUp2                   0040b43c f   LIBCD:memcpy.obj
+ 0001:0000a450       TrailUp3                   0040b450 f   LIBCD:memcpy.obj
+ 0001:0000a4c8       LeadDown1                  0040b4c8 f   LIBCD:memcpy.obj
+ 0001:0000a4e8       LeadDown2                  0040b4e8 f   LIBCD:memcpy.obj
+ 0001:0000a510       LeadDown3                  0040b510 f   LIBCD:memcpy.obj
+ 0001:0000a564       UnwindDown7                0040b564 f   LIBCD:memcpy.obj
+ 0001:0000a56c       UnwindDown6                0040b56c f   LIBCD:memcpy.obj
+ 0001:0000a574       UnwindDown5                0040b574 f   LIBCD:memcpy.obj
+ 0001:0000a57c       UnwindDown4                0040b57c f   LIBCD:memcpy.obj
+ 0001:0000a584       UnwindDown3                0040b584 f   LIBCD:memcpy.obj
+ 0001:0000a58c       UnwindDown2                0040b58c f   LIBCD:memcpy.obj
+ 0001:0000a594       UnwindDown1                0040b594 f   LIBCD:memcpy.obj
+ 0001:0000a5a7       UnwindDown0                0040b5a7 f   LIBCD:memcpy.obj
+ 0001:0000a5c0       TrailDown0                 0040b5c0 f   LIBCD:memcpy.obj
+ 0001:0000a5c8       TrailDown1                 0040b5c8 f   LIBCD:memcpy.obj
+ 0001:0000a5d8       TrailDown2                 0040b5d8 f   LIBCD:memcpy.obj
+ 0001:0000a5ec       TrailDown3                 0040b5ec f   LIBCD:memcpy.obj
+ 0001:0000a2f0       CopyUp                     0040b2f0 f   LIBCD:memcpy.obj
+ 0001:0000a30c       CopyLeadUp                 0040b30c f   LIBCD:memcpy.obj
+ 0001:0000a324       ByteCopyUp                 0040b324 f   LIBCD:memcpy.obj
+ 0001:0000a32c       CopyUnwindUp               0040b32c f   LIBCD:memcpy.obj
+ 0001:0000a468       CopyDown                   0040b468 f   LIBCD:memcpy.obj
+ 0001:0000a490       CopyUnwindDown             0040b490 f   LIBCD:memcpy.obj
+ 0001:0000a49c       CopyLeadDown               0040b49c f   LIBCD:memcpy.obj
+ 0001:0000a4b4       ByteCopyDown               0040b4b4 f   LIBCD:memcpy.obj
+
+FIXUPS: ac7a ffffff46 27 73 fffffe56 2e 2a 2e 14 22 22 fffffe6e 27 f f
+FIXUPS: aa68 ffffff2a 1234 fffffdf7 1f fffffecb 12 18 16 10 1c 31 10 fffffe5c
+FIXUPS: b800 28 fffffe8e 2a 45 4a fffffab8 5 a fffffd7a 3e 146 70 fffffcdd
+FIXUPS: aee7 1b 6c fffffdc1 7a 6a 287a 4f 3a 31 18 45 18 1f 8c 69 2a 34
+FIXUPS: d967 16 7c 2a 28 ffffe054 e f 10 a 5 5 16 39 c 17 10 2b 9 27 efc
+FIXUPS: cb1b 51 60 5a ac 55 51 2b 28 28 28 a0 2b 32 2b 39 20 49 33 142
+FIXUPS: d171 1c 4c 58 b1 fd 76 11e a1 20 31 ffffed20 b3 19 59 5f 54 85
+FIXUPS: c60b 1f 2a 1c 50 1d 1f 62 34 3b 2b 3b 45 2b c 41 6b 56 36 c 2b
+FIXUPS: ca3a 2c 1c 18 fffff180 28 23 20 29 2f 1c 69 28 5f 54 21 128 1e
+FIXUPS: bfbf 33 2f 51 29 3c 21 1b 1c 6b 28 32 4f 18 1f 5b 66 25 1a3e 18
+FIXUPS: ddee 16 2b 14 2e 18 18 7a 63 34 47 1e d 2f 15 11 1d 21 14 26 19d
+FIXUPS: e2a6 19 19 a fffff7da 2a 33 1a ffffe0c1 3989 fffffa23 82 2a fffffbdc
+FIXUPS: ec3b dd 23f fffffc1a 59 fffffed5 fffffc37 2a 2a 227 fffffb4b e
+FIXUPS: e4d2 76 6e 7d 41 fffffd99 3a ffffff09 1b c 10 29 2a fffff88f 10b
+FIXUPS: faf2 64 140 2a 34 35 6b 12 29 43 5a 3d 33 3c 38 1c 1a 18 17 fffff895
+FIXUPS: f79e fffffe3f 12 1d 20 1e 20 8d 12 13 19 fffffba5 1540 142 ba 31
+FIXUPS: 10a65 2a 1b 11d 25 122 1e 30 75 32 22 26 170 55 53 ffffef7d 108
+FIXUPS: 100f8 3e 54 4b 28 fffff671 28 19f 20 57 14 1e10 56 1e 13 22 fffffe07
+FIXUPS: 117b6 28 1f 29 26 17 12 1c fffffe2d 41 fffffdac ffffff2f 5e 7 fffffead
+FIXUPS: 10336 34 24 cb 67 133 18 21 34 30 a8 2117 55 fffffdd1 2f fffffeda
+FIXUPS: 125a9 29 32 fffffcd0 1c 77 3a 59 15 17 1d 14 13 14 1a 19 fffffd7e
+FIXUPS: 1223c 11 2f 25 fffffe4f ffffff2d fffffea7 4a 94 2b 39c7 31 35 44
+FIXUPS: 15a73 1c 147 8a 32 24 f ffffeaf4 fffffe93 2a 45 4b ffffe94c 191
+FIXUPS: 131fc de0 ffffe940 58 ffffff5d 19 fffffe17 17 24 2c 18 3f 10 70
+FIXUPS: 14f87 a8 28 33 43 64 46 41 12 2f 4d 23 10 70 24 5a 46 2f c1 24
+FIXUPS: 155a6 39 76 4a 3d 76 6c 62 20 77 27 70 c28 35 fffffc3b 2a 44 4b
+FIXUPS: 15ffc 2a 44 4b fffffc49 18 11b 21 4b 5d 17 b5 ffffe840 2d 47 4a
+FIXUPS: 148cd 19 a4 1aa 1d 118 1de 32 97 1f 2923 21 24 2a 23 fffffe8a 37
+FIXUPS: 17254 2a0 5a 34 37 60 21 20 1d 11 15 15 fffffa5f 35 18 a6 10 fffffca0
+FIXUPS: 17062 fffffd6f fffffc53 2bf 2d 2f fffff6b5 22fb 29 ffffffa0 17
+FIXUPS: 17ee4 41 8c 14 26f 19 1c 13 2a 3a 10 13 16 26 1e 41 93 20 68 82
+FIXUPS: 1854b 30 10 30 10 fffff74a a7 fffffa75 21f6 1d fffff717 23 5 111
+FIXUPS: 192d7 107 4a 12 5 25e 35 35 1e8 fffff67d 20 20 23 20 20 20 1d 20
+FIXUPS: 1908c 2d fffffdb8 72 13 24 17 fffffce5 191f 98 f6 fffffb76 73 1c
+FIXUPS: 1a2e7 49 11 71 5f 1d c 47 fffffd5d 2b fffffe55 5f fffffb8a 4d 40
+FIXUPS: 19d14 43 4d 40 43 50 50 4d 65 60 fffffb20 2be4 fffff0d5 43 33 24
+FIXUPS: 1b909 2d 9b 32 43 c 10 c fffff35c 14d eb 1c8 8c 152 6d 238 13 fffff1f7
+FIXUPS: 1a878 35 35 13a c 10 c 27 6c 21f1 4f 1df ffffecd5 1d 53 1d 2b 2c
+FIXUPS: 1bcbb 3a e 11 2f 44 c 3e e 11 182 1d8 1ac 2b 33 1b6 f4 27 36 44
+FIXUPS: 1c6ab 10 16 fffeb01b a8 75 11 11 11 4d d 110 47 e e e 7 113 44
+FIXUPS: 7b81 c 46 12 d 2d 18 6 fffffa6c e e e 158d7 1c3 17 fffffad4 fffec1b5
+FIXUPS: 8ec6 1e 1ed 13 13 5b ba 4b 1d 12 9 10 37 4b 99 f 2e 16 10 28 16
+FIXUPS: 9686 81 9 ad 45 ffffe4a3 c3 230 67 bc 530 15 1a 3f f f 43 19 23
+FIXUPS: 87c2 5 1a 22 38 47 5 18 15 17 11 11 13 1f cb 2b c 3a c 83 80 34
+FIXUPS: 8bb1 ffff8940 22 89 45 38 34 11 16 14 25 f e 1a 29 1e 30 1e 17
+FIXUPS: 1092 29 11 12 c 15 ffffff1e 46 7154 1a6 dd 142 51 d ffff8ba1 11
+FIXUPS: 119b c 10 38 30 14 f 15 14 c d 26 23 55 24 24 48 12 14 c d 2d 24
+FIXUPS: 1481 d 14 d 14 d 14 855 6e 17 17 17 17 17 1a 1d0 2a a6 18 31 c
+FIXUPS: 213a 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 16 ffffeef4 6b7
+FIXUPS: 181d 34 27 27 27 27 27 33 31 1f 17 35 14 20 60 69 2f 14 14 14 14
+FIXUPS: 1b73 14 47 17 17 17 26 14 2f 30 981 10 34 10 32 c 14 2d 10 2d 14
+FIXUPS: 2778 fffffb60 39 26 11 17 2f 10 61 34 39 1b 14 16 1a 11 f f 16
+FIXUPS: 17c8 30 1e3c 22 22 26 13e 23 fffff342 37 3f 21 21 21 c c c c a2
+FIXUPS: 2e88 1f d 34 1f d fffff62f c f 10 35 c 10 34 10 184c de 4d fffff8b1
+FIXUPS: 3863 28 38 65 38 4f 35 30 fffff78d fa 101 22 22 2b 22 22 2b 22
+FIXUPS: 34be 32 22 22 22 2b 22 22 22 2b 1a44 fffff392 f 32 1f 1f 1f d 35
+FIXUPS: 44d7 23 d fffffbea 19 33 3e d8 20 58 2d 9b 20 fffff76f 20 55 2d
+FIXUPS: 3c2b 2d 111 2d 31 43 a15 24 13 24 56 59 59 59 59 56 f 2c 1e 58
+FIXUPS: 4b52 38 3f 65 41 68 41 68 f 2c 1e 61 3b 2f 37 39 36 7a 177 11 30
+FIXUPS: 519d 11 2e 23 1f 1f 1a 21 11 1e 21 11 16 46 21 21 d fffff1b4 38
+FIXUPS: 45bb 68 6b 6b f 2c 1e 54 17 51 106e 11 7 15 13 61 14 f 3d 14 f
+FIXUPS: 59ad 3b 14 f 14 f 16 14 14 17 14 d 34 f d fffff585 d 35 21 11 2d
+FIXUPS: 5de1 fffff5df 11 1f 2f 17 53 23 4b 21 2e 11 3c 22 e0 1c 20 11 22
+FIXUPS: 5725 20 11 2c 11 20 11 1b 1c 20 11 1f 11 720 7e 2a 7c 56 40 45
+FIXUPS: 61c7 22 22 13 114 47 69 e6 fffff68e 18 18 1b 1a 19 22 10 73 1c
+FIXUPS: 5cb1 50 d 80 1c 15 15 8c7 2f f 7d 48 53 56 56 56 56 53 f 14 d 79
+FIXUPS: 6a6b 13 15 13 40 48 53 56 56 56 56 53 f 12 fffff1aa 34 32 11c5
+FIXUPS: 7131 fffffd41 29 11 f 1a 2d 2b 44 1d 1d d 39 d 3c 3e 2d fffffd08
+FIXUPS: 6dcc 1f 1c 1d 13 d fffff6fc 41 23 2f 32 32 32 af9 4c 11 16 55 27
+FIXUPS: 7269 41 5e 20 28 2d 14 17 17 17 17 17 17 17 17 17 17 17 17 17 17
+FIXUPS: 74ea 17 17 10 fffffba5
